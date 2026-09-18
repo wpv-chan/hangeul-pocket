@@ -139,7 +139,8 @@ window.addEventListener('hashchange',navigate);navigate();
 
 async function shareApp(){
   const url=new URL('./',location.href).href;
-  if(navigator.share){
+  const isMobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/i.test(navigator.platform));
+  if(isMobile&&navigator.share){
     try{await navigator.share({title:'韩语口袋 · 随身复习',text:'244 个韩语复习项，闪卡、选择、拼写和听音随时练。',url});return;}
     catch(error){if(error.name==='AbortError')return;}
   }
