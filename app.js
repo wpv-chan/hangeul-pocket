@@ -12,7 +12,8 @@ try{const raw=localStorage.getItem(STORAGE_KEY);if(raw){const parsed=JSON.parse(
 let route='practice',listLesson='all',listFilter='all',search='',result=null,toastTimer,installPrompt=null,cacheReady=false;
 function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch{storageError=true;toast('浏览器未能保存进度，请在「设置」里导出备份。');}}
 function toast(message){const el=$('#toast');el.textContent=message;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,4500);}
-const APP_VERSION='1.2.0';
+const APP_VERSION='1.2.1';
+const BUILD_NUMBER='20260930';
 const speechMessages={idle:'点击试听检查发音',loading:'正在准备韩语发音…',playing:'正在播放',ended:'播放已完成',error:'发音未能完成，请点「排查发音」查看详情。'};
 const appleDevice=/iPhone|iPad|iPod/.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.platform));
 const speechPlayer=createSpeechPlayer({synth:window.speechSynthesis,Utterance:window.SpeechSynthesisUtterance,automaticVoice:appleDevice,onState:(status,error)=>{
@@ -23,7 +24,7 @@ const speechPlayer=createSpeechPlayer({synth:window.speechSynthesis,Utterance:wi
 function speak(word,slow=false){if(word)speechPlayer.play(word.speak,slow);}
 function voiceHelp(){
   const info=speechPlayer.diagnostics(),d=$('#dialog');
-  const report=JSON.stringify({version:APP_VERSION,standalone:!!navigator.standalone||matchMedia('(display-mode: standalone)').matches,userAgent:navigator.userAgent,...info},null,2);
+  const report=JSON.stringify({version:APP_VERSION,build:BUILD_NUMBER,standalone:!!navigator.standalone||matchMedia('(display-mode: standalone)').matches,userAgent:navigator.userAgent,...info},null,2);
   d.innerHTML=`<h2 id="dialog-title">排查韩语发音</h2><p>先调高媒体音量，并检查声音是否输出到蓝牙耳机。保持联网，返回设置点「试听」。</p><p>iPhone：设置 → 无障碍（或辅助功能）→ 阅读与朗读（或朗读内容）→ 声音，添加或下载韩语声音。</p><p>如果桌面 App 仍无声，请关闭后重新打开，并用 Safari 打开同一网址比较。反馈时可复制下面的信息；其中不含学习记录。</p><label class="field">播放信息<textarea readonly rows="8" style="width:100%;max-width:100%;font-size:12px" id="voice-report">${esc(report)}</textarea></label><div class="actions"><button class="button tonal" id="voice-copy">复制信息</button><button class="button" id="voice-close">关闭</button></div>`;
   d.showModal();$('#voice-close').onclick=()=>d.close();$('#voice-copy').onclick=async()=>{try{await navigator.clipboard.writeText(report);toast('播放信息已复制。');}catch{$('#voice-report').select();toast('请长按选中的文字复制。');}};
 }
@@ -35,7 +36,7 @@ function streak(){let count=0;const d=new Date();if(!state.daily[localDate(d)]?.
 function lessonOptions(selected='all'){return `<option value="all">全部 ${lessons.length} 课</option>`+lessons.map(l=>`<option value="${l.id}" ${String(selected)===String(l.id)?'selected':''}>第 ${l.id} 课 · ${l.title}</option>`).join('');}
 function renderNav(){const nav=[['practice','play','练习'],['words','book','词库'],['progress','chart','进度'],['settings','settings','设置']];$('#navigation').innerHTML=nav.map(([id,i,label])=>`<a class="nav-button" href="#${id}" ${route===id?'aria-current="page"':''}><span class="nav-icon">${icon(i)}</span><span>${label}</span></a>`).join('');}
 function heading(title,subtitle,extra=''){return `<div class="page-heading"><div><h1>${title}</h1><p>${subtitle}</p></div>${extra}</div>`;}
-function render(){renderNav();$('#main').innerHTML=(storageError?'<div class="storage-warning">本地进度读取或保存失败，请导出备份。避免清除浏览器数据。</div>':'')+(route==='practice'?renderPractice():route==='words'?renderWords():route==='progress'?renderProgress():renderSettings());bind();}
+function render(){renderNav();$('#main').innerHTML=(storageError?'<div class="storage-warning">本地进度读取或保存失败，请导出备份。避免清除浏览器数据。</div>':'')+(route==='practice'?renderPractice():route==='words'?renderWords():route==='progress'?renderProgress():renderSettings())+`<footer class="build-version" aria-label="网页版本 ${BUILD_NUMBER}" title="网页版本 ${BUILD_NUMBER}">${BUILD_NUMBER}</footer>`;bind();}
 function renderPractice(){
   if(result)return renderResult();
   if(state.active?.open)return renderQuiz();

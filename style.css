@@ -12,3 +12,5 @@
 
 .feedback{scroll-margin-bottom:110px}.mode small{font-size:.75rem}
 @media(max-width:760px){.mode{min-height:100px}.mode-title{font-size:.875rem}.mode small{font-size:.75rem}.mode{gap:8px}.start-row{padding-top:16px;margin-top:18px}.count-row{margin-top:16px}.goal-inner span:last-child,.goal-stats small,.answer-letter{font-size:.75rem}.quiz-card{min-height:240px}.feedback{scroll-margin-bottom:calc(110px + env(safe-area-inset-bottom))}.brand small{font-size:.75rem}}
+
+.build-version{margin-top:28px;text-align:center;font-size:11px;line-height:22px;letter-spacing:.12em;color:var(--muted);opacity:.6}
