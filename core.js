@@ -11,6 +11,7 @@ export function review(prev={},correct,now=Date.now()){
 }
 export function poolFor(words,state,config,now=Date.now()){
   let pool=words.filter(w=>config.lesson==='all'||w.lessons.includes(Number(config.lesson)));
+  if(config.scope==='added')pool=pool.filter(w=>w.addedDate==='2026-09-30');
   if(config.scope==='wrong')pool=pool.filter(w=>state.progress[w.id]?.weak);
   if(config.scope==='star')pool=pool.filter(w=>state.favorites.includes(w.id));
   pool=shuffled(pool);
@@ -47,7 +48,7 @@ export function validateBackup(data,words){
   result.sessions=Array.isArray(data.sessions)?data.sessions.filter(s=>s&&Number.isFinite(s.time)&&Number.isInteger(s.total)&&s.total>0&&Number.isInteger(s.correct)&&s.correct>=0&&s.correct<=s.total&&Number.isFinite(s.seconds)&&s.seconds>=0&&typeof s.mode==='string').map(s=>({time:s.time,total:s.total,correct:s.correct,seconds:s.seconds,mode:s.mode})).slice(-200):[];
   result.theme=data.theme==='dark'?'dark':'light';
   if(data.config&&['flash','kozh','zhko','spell','listen','mix'].includes(data.config.mode)){
-    result.config={mode:data.config.mode,lesson:['all','1','2','3','4','5','6','7'].includes(String(data.config.lesson))?String(data.config.lesson):'all',scope:['smart','all','wrong','star'].includes(data.config.scope)?data.config.scope:'smart',count:[10,20,'all'].includes(data.config.count)?data.config.count:10};
+    result.config={mode:data.config.mode,lesson:['all',...new Set(words.flatMap(w=>w.lessons).map(String))].includes(String(data.config.lesson))?String(data.config.lesson):'all',scope:['smart','all','wrong','star','added'].includes(data.config.scope)?data.config.scope:'smart',count:[10,20,'all'].includes(data.config.count)?data.config.count:10};
   }
   return result;
 }

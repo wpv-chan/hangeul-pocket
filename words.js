@@ -1,4 +1,5 @@
-// Transcribed from the eight supplied photographs. Row numbers preserve provenance.
+import {additions} from './words-0930.js';
+// Transcribed from supplied photographs. Row numbers preserve provenance.
 // Repeated entries with the same meaning share a learning record across lessons.
 const rawLessons = [
   ['自我介绍', `직업|职业
@@ -248,7 +249,12 @@ const rawLessons = [
 언제|什么时候
 이번|这次`],
 ];
+rawLessons[6][1]+='\n'+additions[0].raw;
+rawLessons.push(...additions.slice(1).map(l=>[l.title,l.raw]));
+export const PHOTO_COUNT=23;
+export const SOURCE_ROW_COUNT=rawLessons.reduce((n,[,raw])=>n+raw.split('\n').length,0);
 export const lessons = rawLessons.map(([title,raw],i)=>({id:i+1,title,count:raw.split('\n').length}));
+const newFile=n=>['Weixin Image_20260930202628_20928_15','Weixin Image_20260930202634_20929_15','Weixin Image_20260930202639_20930_15','Weixin Image_20260930202644_20931_15','Weixin Image_20260930202648_20932_15','Weixin Image_20260930202653_20933_15','Weixin Image_20260930202657_20934_15','Weixin Image_20260930202714_20935_15','Weixin Image_20260930202723_20936_15','Weixin Image_20260930202746_20937_15','Weixin Image_20260930202750_20938_15','Weixin Image_20260930202758_20939_15','Weixin Image_20260930202803_20940_15','Weixin Image_20260930202809_20941_15','Weixin Image_20260930202814_20942_15'][n-1];
 const sourceRows = [
   [[1,30,'0deecbbbcc6cb37bc18146dfbdfcadfc'],[31,34,'3f96fcd77d6ce5338d3047cea1a4e8e3']],
   [[1,24,'3f96fcd77d6ce5338d3047cea1a4e8e3'],[25,33,'4246f6884ec6398cae39f4717b06a4b4']],
@@ -256,16 +262,49 @@ const sourceRows = [
   [[1,20,'7a56ae66f9da0aea03c1ba50a4afd7aa'],[21,25,'91f177fdb076838e377b9ba595ce93a8']],
   [[1,25,'91f177fdb076838e377b9ba595ce93a8'],[26,38,'76fb1c1a83b2036f5a80925352610468']],
   [[1,18,'76fb1c1a83b2036f5a80925352610468'],[19,49,'cdf1a6cab5c9dc0c1811f2600e9e4adf']],
-  [[1,31,'1162d7688fad25ed07155132068c2f08'],[32,32,'cdf1a6cab5c9dc0c1811f2600e9e4adf']],
+  [[1,31,'1162d7688fad25ed07155132068c2f08'],[32,32,'cdf1a6cab5c9dc0c1811f2600e9e4adf'],[33,51,newFile(1)]],
 ];
-const wordsMap = new Map();
+sourceRows.push(
+  [[1,25,newFile(1)]],
+  [[1,14,newFile(1)],[15,26,newFile(2)]],
+  [[1,45,newFile(2)],[46,49,newFile(3)]],
+  [[1,20,newFile(3)]],
+  [[1,37,newFile(3)],[38,43,newFile(4)]],
+  [[1,36,newFile(4)]],
+  [[1,37,newFile(5)]],
+  [[1,25,newFile(5)],[26,32,newFile(6)]],
+  [[1,27,newFile(6)]],
+  [[1,26,newFile(6)],[27,34,newFile(7)]],
+  [[1,26,newFile(7)]],
+  [[1,22,newFile(7)],[23,30,newFile(10)]],
+  [[1,46,newFile(10)]],
+  [[1,25,newFile(11)]],
+  [[1,28,newFile(11)]],
+  [[1,2,newFile(11)],[3,21,newFile(12)]],
+  [[1,31,newFile(12)],[32,33,newFile(13)]],
+  [[1,15,newFile(13)]],
+  [[1,25,newFile(13)]],
+  [[1,8,newFile(13)],[9,24,newFile(14)]],
+  [[1,22,newFile(14)]],
+  [[1,15,newFile(14)],[16,28,newFile(15)]],
+  [[1,21,newFile(15)]]
+);
+const wordsMap = new Map(),answerMap=new Map();
+const answerKey=(answer,zh)=>answer.normalize('NFC').replace(/\s/g,'')+'|'+zh;
 rawLessons.forEach(([,raw],i)=>raw.split('\n').forEach((line,j)=>{
   const [ko,zh,alternatives] = line.split('|');
-  const key = `${ko}|${zh}`;
+  const answers=alternatives?alternatives.split(';'):i>=7&&/\([을를이]\)/.test(ko)?[ko.replace(/\([을를이]\)/g,''),ko.replace(/[()]/g,'')]:[ko];
   const source = {lesson:i+1,row:j+1,file:sourceRows[i].find(([a,b])=>j+1>=a&&j+1<=b)[2]+'.jpg'};
-  const existing = wordsMap.get(key);
-  if(existing){existing.lessons.push(i+1);existing.sources.push(source);return;}
-  const answers = alternatives ? alternatives.split(';') : [ko];
-  wordsMap.set(key,{id:`l${i+1}-${j+1}`,ko,zh,answers,speak:answers[0],lessons:[i+1],sources:[source]});
+  const existing=wordsMap.get(`${ko}|${zh}`)||answers.map(a=>answerMap.get(answerKey(a,zh))).find(Boolean);
+  if(existing){if(!existing.lessons.includes(i+1))existing.lessons.push(i+1);existing.sources.push(source);for(const a of answers)if(!existing.answers.includes(a))existing.answers.push(a);existing.answers.forEach(a=>answerMap.set(answerKey(a,zh),existing));return;}
+  const word={id:`l${i+1}-${j+1}`,ko,zh,answers,speak:answers[0],lessons:[i+1],sources:[source]};
+  wordsMap.set(`${ko}|${zh}`,word);answers.forEach(a=>answerMap.set(answerKey(a,zh),word));
 }));
+// These two new photos confirm existing rows; they add provenance, not duplicate cards.
+for(const word of wordsMap.values())for(const source of [...word.sources]){
+  const n=source.lesson===4&&source.row>=21||source.lesson===5||source.lesson===6&&source.row<=18?8:source.lesson===6&&source.row>=19||source.lesson===7&&source.row<=31?9:source.lesson===7&&source.row===32?1:null;
+  if(n)word.sources.push({...source,file:newFile(n)+'.jpg'});
+}
 export const words = [...wordsMap.values()];
+for(const word of words)if(word.sources[0].lesson>7||word.sources[0].lesson===7&&word.sources[0].row>32)word.addedDate='2026-09-30';
+export const NEW_WORD_COUNT=words.filter(w=>w.addedDate==='2026-09-30').length;
