@@ -57,7 +57,7 @@ python3 -m http.server 4173
 
 语音兼容性修复有模拟回归测试；未在用户的 iPhone 16 / iOS 27 上实测。系统或 WebKit 本身不能启动 TTS 时，网页会显示错误或超时，不保证所有系统语音可用。无需麦克风权限。
 
-页面底部以浅色小字显示数字版本（当前 `2026093002`），方便确认正在使用的内容。发布更新时维护 `app.js` 的 `APP_VERSION` / `BUILD_NUMBER` 和 `sw.js` 的缓存版本；同日再次发布可给数字追加序号以区分。
+页面底部以浅色小字显示数字版本（当前 `2026093003`），方便确认正在使用的内容。发布更新时维护 `app.js` 的 `APP_VERSION` / `BUILD_NUMBER` 和 `sw.js` 的缓存版本；同日再次发布可给数字追加序号以区分。
 
 ## 韩文字母入门（v1.3.0）
 
@@ -68,3 +68,9 @@ python3 -m http.server 4173
 - 小测验：看字选示范音罗马字、听音认字、字母闪卡；每轮最多 10 个，结束后可以只练不熟的。听音题排除现代口语常合流的元音干扰项。本轮结果不持久保存，也不影响词汇统计。
 
 中文提示不是标准音标，不按汉语声调读。辅音以配 `ㅏ` 的完整音节试听，避免语音引擎将单独辅音读成字母名称。字母与罗马字资料参考韩国国立国语院，页面底部提供来源。新模块列入离线预缓存；发音仍使用设备系统声音。
+
+## 界面图标（v1.3.1）
+
+导航、练习模式、发音、收藏、分享、主题切换及反馈图标统一使用 Google 官方 [Material Symbols Outlined](https://developers.google.com/fonts/docs/material_symbols)（24 px、weight 400、fill 0、grade 0）。`icons.js` 直接内置官方 SVG 图形，随离线资源缓存，不依赖 Google Fonts 联网加载；SVG 以 `currentColor` 适配深浅色主题，按钮的中文无障碍名称保留。
+
+图标来源：[google/material-design-icons](https://github.com/google/material-design-icons/tree/bd8cb85bd4bad964fe6918f79665bb40c3a8efef/symbols/web)。Apache 2.0 许可全文保存在 `licenses/Google-Material-Symbols-LICENSE.txt`。增加图标时应从同一官方系列取原始图形，不自行描画路径。
