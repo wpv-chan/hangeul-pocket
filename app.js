@@ -12,8 +12,8 @@ try{const raw=localStorage.getItem(STORAGE_KEY);if(raw){const parsed=JSON.parse(
 let route='practice',listLesson='all',listFilter='all',search='',result=null,toastTimer,installPrompt=null,cacheReady=false;
 function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch{storageError=true;toast('浏览器未能保存进度，请在「设置」里导出备份。');}}
 function toast(message){const el=$('#toast');el.textContent=message;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,4500);}
-const APP_VERSION='1.3.1';
-const BUILD_NUMBER='2026093003';
+const APP_VERSION='1.3.2';
+const BUILD_NUMBER='2026093004';
 const speechMessages={idle:'点击试听检查发音',loading:'正在准备韩语发音…',playing:'正在播放',ended:'播放已完成',error:'发音未能完成，请点「排查发音」查看详情。'};
 const appleDevice=/iPhone|iPad|iPod/.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.platform));
 const speechPlayer=createSpeechPlayer({synth:window.speechSynthesis,Utterance:window.SpeechSynthesisUtterance,automaticVoice:appleDevice,onState:(status,error)=>{
@@ -38,7 +38,7 @@ function streak(){let count=0;const d=new Date();if(!state.daily[localDate(d)]?.
 function lessonOptions(selected='all'){return `<option value="all">全部 ${lessons.length} 课</option>`+lessons.map(l=>`<option value="${l.id}" ${String(selected)===String(l.id)?'selected':''}>第 ${l.id} 课 · ${l.title}</option>`).join('');}
 function renderNav(){const nav=[['practice','play','练习'],['alphabet','alphabet','字母'],['words','book','词库'],['progress','chart','进度'],['settings','settings','设置']];$('#navigation').innerHTML=nav.map(([id,i,label])=>`<a class="nav-button" href="#${id}" ${route===id?'aria-current="page"':''}><span class="nav-icon">${icon(i)}</span><span>${label}</span></a>`).join('');}
 function heading(title,subtitle,extra=''){return `<div class="page-heading"><div><h1>${title}</h1><p>${subtitle}</p></div>${extra}</div>`;}
-function render(){renderNav();$('#main').innerHTML=(storageError?'<div class="storage-warning">本地进度读取或保存失败，请导出备份。避免清除浏览器数据。</div>':'')+(route==='practice'?renderPractice():route==='alphabet'?alphabetPage.render():route==='words'?renderWords():route==='progress'?renderProgress():renderSettings())+`<footer class="build-version" aria-label="网页版本 ${BUILD_NUMBER}" title="网页版本 ${BUILD_NUMBER}">${BUILD_NUMBER}</footer>`;bind();}
+function render(){renderNav();$('#main').innerHTML=(storageError?'<div class="storage-warning">本地进度读取或保存失败，请导出备份。避免清除浏览器数据。</div>':'')+(route==='practice'?renderPractice():route==='alphabet'?alphabetPage.render():route==='words'?renderWords():route==='progress'?renderProgress():renderSettings());bind();}
 function renderPractice(){
   if(result)return renderResult();
   if(state.active?.open)return renderQuiz();
