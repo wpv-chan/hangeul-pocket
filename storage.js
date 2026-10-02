@@ -50,25 +50,28 @@ export async function openStore(initial,{indexedDB=globalThis.indexedDB,scope='d
     const get=store.get('current');get.onsuccess=()=>{try{result=fn(get.result,store,tx.objectStore('answers'));}catch(e){tx.abort();reject(e);}};
   });}
   let record=await transaction((r,store)=>{if(!r){r={epoch:uid(),state:clone(initial)};store.put(r,'current');}return r;});
-  let baseline=clone(record.state),tail=Promise.resolve(),pending=0,refreshPending=false,failed=false;
+  let baseline=clone(record.state),writeEpoch=record.epoch,tail=Promise.resolve(),pending=0,refreshPending=false,failed=false;
   const channel=typeof BroadcastChannel==='function'?new BroadcastChannel('hangeul-pocket-'+scope):null;
   async function refresh(){
     if(failed)return;
     if(pending){refreshPending=true;return;}
     const next=await transaction(r=>r);
     if(pending){refreshPending=true;return;}
-    if(!equal(record,next)){record=next;const snapshot=clone(next.state);onChange(snapshot,true);baseline=clone(snapshot);}
+    if(!equal(record,next)){record=next;writeEpoch=next.epoch;const snapshot=clone(next.state);onChange(snapshot,true);baseline=clone(snapshot);}
   }
   if(channel)channel.onmessage=()=>refresh().catch(onError);
   function save(state,{reviews=[],replace=false}={}){
-    const patch=makePatch(baseline,state,reviews),replacement=replace?clone(state):null,epoch=record.epoch;
+    // Reserve the replacement generation now so subsequent local writes join it,
+    // while other pages still retain their old generation until they refresh.
+    if(replace)writeEpoch=uid();
+    const patch=makePatch(baseline,state,reviews),replacement=replace?clone(state):null,epoch=writeEpoch;
     baseline=clone(state);pending++;
     const job=tail.then(()=>{if(failed)throw new Error("请导出备份后重新打开网页。");return new Promise((resolve,reject)=>{
       const tx=db.transaction(['state','answers'],'readwrite'),store=tx.objectStore('state'),answers=tx.objectStore('answers');let next;
       tx.oncomplete=()=>resolve(next);tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('保存被中断。'));
       const get=store.get('current');get.onsuccess=()=>{
         const current=get.result;
-        if(replacement){next={epoch:uid(),state:replacement};answers.clear();store.put(next,'current');return;}
+        if(replacement){next={epoch,state:replacement};answers.clear();store.put(next,'current');return;}
         if(current.epoch!==epoch){next=current;return;} // Reset/import invalidates writes from old pages.
         const applied=new Set();let left=reviews.length;
         const finish=()=>{next={epoch:current.epoch,state:applyPatch(current.state,patch,applied)};for(const e of reviews)answers.put(true,e.eventId);store.put(next,'current');};
@@ -77,7 +80,7 @@ export async function openStore(initial,{indexedDB=globalThis.indexedDB,scope='d
       };
     });});
     tail=job.then(next=>{record=next;channel?.postMessage('saved');},error=>{failed=true;onError(error);}).finally(()=>{
-      pending--;if(!pending&&!failed){const snapshot=clone(record.state);onChange(snapshot,false);baseline=clone(snapshot);if(refreshPending){refreshPending=false;refresh().catch(onError);}}
+      pending--;if(!pending&&!failed){writeEpoch=record.epoch;const snapshot=clone(record.state);onChange(snapshot,false);baseline=clone(snapshot);if(refreshPending){refreshPending=false;refresh().catch(onError);}}
     });
     return job;
   }

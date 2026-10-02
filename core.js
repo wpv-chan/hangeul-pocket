@@ -4,6 +4,13 @@ export function localDate(time=Date.now()) { const d=new Date(time);return `${d.
 export function freshState(){return {version:1,progress:{},favorites:[],sessions:[],daily:{},active:null,config:{mode:'kozh',lesson:'all',scope:'smart',count:10},theme:'light',alphabet:{prefs:{tab:'learn',group:'basic-vowels',showHints:true,quizMode:'read',initial:'ㄱ',vowel:'ㅏ',final:''},progress:{},quiz:null}};}
 export function normalize(text){return String(text).normalize('NFC').replace(/[\s?!.,。？！·]/gu,'').toLowerCase();}
 export function matches(word,input){return [...word.answers,word.ko].some(a=>normalize(a)===normalize(input));}
+export function acceptsChoice(word,id){return word.id===id||!!word.equivalentIds?.includes(id);}
+// Opening a saved quiz is a choice made in this page, not a shared preference.
+export function quizViewFor(active,local=null){
+  if(!active)return null;
+  const same=active.id===local?.id?local:null;
+  return {...active,open:!!same?.open,resumed:same?.open?same.resumed??null:null};
+}
 export function shuffled(items,random=Math.random){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 // Only a due review on a later calendar day advances the interval.
 export function review(prev={},correct,now=Date.now()){
@@ -27,7 +34,7 @@ export function poolFor(words,state,config,now=Date.now()){
 export function optionsFor(word,words,type){
   const field=type==='zhko'?'ko':'zh';
   const used=new Set([word[field]]);
-  const candidates=shuffled(words.filter(w=>w.id!==word.id&&w.ko!==word.ko&&w.zh!==word.zh&&!word.equivalentIds?.includes(w.id)));
+  const candidates=shuffled(words.filter(w=>!acceptsChoice(word,w.id)&&w.ko!==word.ko&&w.zh!==word.zh));
   const options=[{id:word.id,label:word[field]}];
   for(const w of candidates){if(!used.has(w[field])){options.push({id:w.id,label:w[field]});used.add(w[field]);}if(options.length===4)break;}
   return shuffled(options);

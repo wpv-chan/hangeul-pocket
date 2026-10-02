@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {indexedDB} from 'fake-indexeddb';
-import {freshState,review,validateBackup} from './core.js';
+import {freshState,review,validateBackup,quizViewFor} from './core.js';
 import {words} from './words.js';
 import {openStore} from './storage.js';
 
@@ -61,4 +61,42 @@ test('first upgrade migrates legacy records once and later stale legacy snapshot
   await a.save(a.state,answer(a.state,'l1-2','new:1'));
   const b=await openStore(validateBackup(legacy,words),{indexedDB,scope});t.after(()=>b.close());
   assert.equal(b.state.progress['l1-1'].seen,7);assert.equal(b.state.progress['l1-2'].seen,1);
+});
+
+for(const kind of ['import','reset'])test(`${kind} preserves settings and answers queued before replacement finishes`,async t=>{
+  const {a,scope}=await pair(t),next=freshState();
+  if(kind==='import'){next.progress['l1-2']=review(undefined,false);next.favorites=['l1-2'];}
+  const replacing=a.save(next,{replace:true});
+  next.config.mode='spell';const settings=a.save(next);
+  const grading=a.save(next,answer(next,'l1-1',`${kind}:first`));
+  const [, ,saved]=await Promise.all([replacing,settings,grading]);await a.flush();
+  assert.equal(saved.state.config.mode,'spell');assert.equal(saved.state.progress['l1-1'].seen,1);
+  assert.equal(Object.values(saved.state.daily)[0].total,1);
+  if(kind==='import'){assert.equal(saved.state.progress['l1-2'].wrong,1);assert.deepEqual(saved.state.favorites,['l1-2']);}
+  const reopened=await openStore(freshState(),{indexedDB,scope});t.after(()=>reopened.close());
+  assert.deepEqual(reopened.state,saved.state);
+});
+
+test('multiple queued replacements retain only the latest replacement and its following answer',async t=>{
+  const {a}=await pair(t),first=freshState(),second=freshState();
+  first.favorites=['l1-1'];second.favorites=['l1-2'];
+  const jobs=[a.save(first,{replace:true}),a.save(first,answer(first,'l1-1','before-second')),a.save(second,{replace:true}),a.save(second,answer(second,'l1-2','after-second'))];
+  const saved=(await Promise.all(jobs)).at(-1);await a.flush();
+  assert.deepEqual(saved.state.favorites,['l1-2']);assert.equal(saved.state.progress['l1-1'],undefined);assert.equal(saved.state.progress['l1-2'].seen,1);
+});
+
+test('reopening then changing settings keeps the saved quiz paused until explicitly resumed',async t=>{
+  const scope=crypto.randomUUID(),initial=freshState();
+  initial.active={id:'unfinished',mode:'flash',open:true,resumed:100,index:0,answers:[],queue:[{id:'l1-1',type:'flash',options:[]}]};
+  const first=await openStore(initial,{indexedDB,scope});first.close();
+  let view;
+  const store=await openStore(freshState(),{indexedDB,scope,onChange:next=>{next.active=quizViewFor(next.active,view.active);view=next;}});t.after(()=>store.close());
+  view=store.state;view.active=quizViewFor(view.active);store.adopt(view);
+  for(const change of [s=>s.config.mode='spell',s=>s.config.count=20,s=>s.config.lesson='2',s=>s.favorites.push('l1-1')]){
+    change(view);await store.save(view);await store.flush();
+    assert.equal(view.active.open,false);assert.equal(view.active.resumed,null);assert.deepEqual(view.active.queue,initial.active.queue);
+  }
+  view.active.open=true;view.active.resumed=200;
+  await store.save(view);await store.flush();
+  assert.equal(view.active.open,true);assert.equal(view.active.resumed,200);assert.equal(view.config.mode,'spell');
 });

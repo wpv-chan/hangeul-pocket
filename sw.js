@@ -1,7 +1,7 @@
-// Release 2026100203: cached audio and storage migration.
+// Release 2026100204: reliable import, explicit resume and equivalent answers.
 importScripts('./audio-cache.js');
 const PREFIX='hangeul-pocket-'+new URL(self.registration.scope).pathname+'-';
-const CACHE=PREFIX+'v1.4.0',AUDIO_CACHE=PREFIX+'audio-v1';
+const CACHE=PREFIX+'v1.4.1',AUDIO_CACHE=PREFIX+'audio-v1';
 const ASSETS=['./','./index.html','./style.css','./app.js','./icons.js','./core.js','./storage.js','./speech.js','./alphabet.js','./alphabet-ui.js','./words.js','./words-0930.js','./audio-manifest.js','./icon.svg','./icon-192.png','./icon-512.png','./manifest.webmanifest'];
 const absolute=path=>new URL(path,self.registration.scope).href;
 const assets=new Set(ASSETS.map(absolute)),audio=new Set(self.HANGEUL_AUDIO.paths.map(absolute));

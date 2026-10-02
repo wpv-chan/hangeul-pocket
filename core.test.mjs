@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {words,lessons,SOURCE_ROW_COUNT,NEW_WORD_COUNT} from './words.js';
-import {freshState,review,matches,poolFor,optionsFor,validateBackup} from './core.js';
+import {freshState,review,matches,acceptsChoice,quizViewFor,poolFor,optionsFor,validateBackup} from './core.js';
 
 test('all photographed rows stay complete and homographs stay distinct after September additions',()=>{
   assert.deepEqual(lessons.map(l=>l.count),[34,33,35,25,38,49,51,25,26,49,20,43,36,37,32,27,34,26,30,46,25,28,21,33,15,25,24,22,28,21]);
@@ -77,4 +77,27 @@ test('backups round trip and malformed numeric state is rejected',()=>{
   assert.deepEqual(validateBackup(JSON.parse(JSON.stringify(state)),words),state);
   assert.throws(()=>validateBackup({version:2,progress:{}},words));
   state.progress[words[0].id].due='tomorrow';assert.throws(()=>validateBackup(state,words));
+});
+
+test('this and its colloquial form accept either spelling and cannot compete in new choices',()=>{
+  const formal=words.find(w=>w.ko==='이것'),spoken=words.find(w=>w.ko==='이거');
+  for(const [word,other] of [[formal,spoken],[spoken,formal]]){
+    assert.ok(matches(word,other.ko));assert.ok(matches(word,other.ko.normalize('NFD')));
+    assert.equal(matches(word,'그것'),false);
+    for(const type of ['kozh','zhko','listen']){
+      const choices=optionsFor(word,[word,other,...words.slice(0,3)],type);
+      assert.equal(choices.length,4);assert.ok(choices.some(o=>o.id===word.id));assert.ok(choices.every(o=>o.id!==other.id));
+    }
+    // A saved v1.4.0 question may already contain both options.
+    assert.ok(acceptsChoice(word,word.id));assert.ok(acceptsChoice(word,other.id));assert.equal(acceptsChoice(word,'l1-1'),false);
+  }
+});
+
+test('sync keeps this page quiz visibility and timer while adopting new answers',()=>{
+  const incoming={id:'round',open:true,resumed:100,answers:[{correct:true}]};
+  assert.equal(quizViewFor(incoming).open,false);
+  const paused=quizViewFor(incoming,{id:'round',open:false,resumed:null});assert.equal(paused.open,false);assert.equal(paused.resumed,null);assert.deepEqual(paused.answers,incoming.answers);
+  const opened=quizViewFor({...incoming,open:false,resumed:null},{id:'round',open:true,resumed:200});assert.equal(opened.open,true);assert.equal(opened.resumed,200);
+  assert.equal(quizViewFor(incoming,{id:'another-round',open:true,resumed:300}).open,false);
+  assert.equal(quizViewFor(null,opened),null);
 });
