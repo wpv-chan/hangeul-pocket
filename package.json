@@ -1,0 +1,7 @@
+{
+  "name": "hangeul-pocket",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test *.test.mjs"},
+  "devDependencies": {"fake-indexeddb": "6.2.5"}
+}

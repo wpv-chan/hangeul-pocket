@@ -32,12 +32,29 @@ test('spelling accepts lesson variants and rejects different meanings',()=>{
   const noodles=words.find(w=>w.ko==='자장면/짜장면');assert.ok(matches(noodles,'짜장면'));assert.ok(matches(noodles,'자장면'));
   assert.deepEqual(photos.lessons,[10,14]);
 });
-test('wrong cards return after ten minutes and clear only after two successes',()=>{
-  const now=1_000_000;let p=review(undefined,false,now);assert.equal(p.due,now+600_000);assert.ok(p.weak);
-  p=review(p,true,now);assert.equal(p.due,now+86400000);assert.ok(p.weak);
-  p=review(p,true,now);assert.equal(p.due,now+3*86400000);assert.equal(p.weak,false);
-  p=review(p,true,now);assert.equal(p.streak,3);assert.equal(p.due,now+7*86400000);
-  p=review(p,false,now);assert.equal(p.streak,0);assert.ok(p.weak);assert.equal(p.correct+p.wrong,p.seen);
+test('same-day repeats and early practice cannot advance mastery or postpone a due review',()=>{
+  const now=new Date(2026,9,2,12).getTime(),day=86400000;
+  let p=review(undefined,false,now);assert.equal(p.due,now+600000);assert.ok(p.weak);
+  p=review(p,true,now);assert.equal(p.streak,1);assert.equal(p.due,now+day);assert.ok(p.weak);
+  for(let i=0;i<5;i++)p=review(p,true,now+1000+i);assert.equal(p.streak,1);assert.equal(p.due,now+day);assert.ok(p.weak);
+  p=review(p,true,now+day);assert.equal(p.streak,2);assert.equal(p.due,now+4*day);assert.equal(p.weak,false);
+  p=review(p,true,now+2*day);assert.equal(p.streak,2);assert.equal(p.due,now+4*day);
+  p=review(p,true,now+4*day);assert.equal(p.streak,3);assert.equal(p.due,now+11*day);
+  p=review(p,false,now+5*day);assert.equal(p.streak,0);assert.ok(p.weak);assert.equal(p.correct+p.wrong,p.seen);
+});
+test('curated synonyms work in both directions and ambiguous parts of speech get specific prompts',()=>{
+  for(const w of words.filter(w=>w.equivalentIds))for(const id of w.equivalentIds){const other=words.find(x=>x.id===id);for(const answer of other.answers)assert.ok(matches(w,answer),w.ko+' / '+answer);}
+  assert.ok(matches(words.find(w=>w.id==='l5-22'),'노래를 부르다'));
+  assert.ok(matches(words.find(w=>w.id==='l2-23'),'한국말'));
+  const noun=words.find(w=>w.id==='l12-27'),verb=words.find(w=>w.id==='l4-5');
+  assert.equal(matches(noun,'운동하다'),false);assert.equal(matches(verb,'운동'),false);
+  assert.notEqual(noun.spellingPrompt,verb.spellingPrompt);
+  assert.ok(words.find(w=>w.id==='l8-10').spellingPrompt.includes('淋浴'));
+});
+test('old backups retain counts and favorites but migrate unverified mastery conservatively',()=>{
+  const s=freshState(),p=review(undefined,true);delete p.scheduleVersion;delete p.stageDay;p.streak=6;p.due=Date.now()+60*86400000;
+  s.progress[words[0].id]=p;s.favorites=[words[0].id];delete s.alphabet;
+  const migrated=validateBackup(s,words);assert.equal(migrated.progress[words[0].id].streak,1);assert.equal(migrated.progress[words[0].id].seen,1);assert.deepEqual(migrated.favorites,s.favorites);assert.deepEqual(migrated.alphabet,freshState().alphabet);
 });
 test('all choices are unique and do not include a competing homograph',()=>{
   for(const word of words)for(const type of ['kozh','zhko','listen']){

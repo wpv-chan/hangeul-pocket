@@ -308,3 +308,9 @@ for(const word of wordsMap.values())for(const source of [...word.sources]){
 export const words = [...wordsMap.values()];
 for(const word of words)if(word.sources[0].lesson>7||word.sources[0].lesson===7&&word.sources[0].row>32)word.addedDate='2026-09-30';
 export const NEW_WORD_COUNT=words.filter(w=>w.addedDate==='2026-09-30').length;
+
+// Curated equivalent answers, never infer equivalence from Chinese text alone.
+const equivalentGroups=[['l2-23','l16-24'],['l3-1','l13-30'],['l5-22','l29-24'],['l7-51','l16-25'],['l8-8','l27-2'],['l9-24','l20-41'],['l13-15','l27-8'],['l13-27','l21-25'],['l18-4','l26-23'],['l18-18','l27-7']];
+for(const ids of equivalentGroups){const group=words.filter(w=>ids.includes(w.id));const answers=[...new Set(group.flatMap(w=>w.answers))];for(const w of group){w.equivalentIds=ids;w.answers=[...new Set([...w.answers,...answers])];}}
+const spellingPrompts={'l4-5':'运动（动词：做运动）','l12-27':'运动（名词）','l8-10':'洗澡（淋浴；外来语表达）','l22-7':'洗澡（沐浴；汉字词表达）'};
+for(const w of words)if(spellingPrompts[w.id])w.spellingPrompt=spellingPrompts[w.id];

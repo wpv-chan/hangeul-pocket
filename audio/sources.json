@@ -1,0 +1,4642 @@
+[
+  {
+    "text": "아",
+    "file": "letter-c544",
+    "precache": true
+  },
+  {
+    "text": "야",
+    "file": "letter-c57c",
+    "precache": true
+  },
+  {
+    "text": "어",
+    "file": "letter-c5b4",
+    "precache": true
+  },
+  {
+    "text": "여",
+    "file": "letter-c5ec",
+    "precache": true
+  },
+  {
+    "text": "오",
+    "file": "letter-c624",
+    "precache": true
+  },
+  {
+    "text": "요",
+    "file": "letter-c694",
+    "precache": true
+  },
+  {
+    "text": "우",
+    "file": "letter-c6b0",
+    "precache": true
+  },
+  {
+    "text": "유",
+    "file": "letter-c720",
+    "precache": true
+  },
+  {
+    "text": "으",
+    "file": "letter-c73c",
+    "precache": true
+  },
+  {
+    "text": "이",
+    "file": "letter-c774",
+    "precache": true
+  },
+  {
+    "text": "애",
+    "file": "letter-c560",
+    "precache": true
+  },
+  {
+    "text": "얘",
+    "file": "letter-c598",
+    "precache": true
+  },
+  {
+    "text": "에",
+    "file": "letter-c5d0",
+    "precache": true
+  },
+  {
+    "text": "예",
+    "file": "letter-c608",
+    "precache": true
+  },
+  {
+    "text": "와",
+    "file": "letter-c640",
+    "precache": true
+  },
+  {
+    "text": "왜",
+    "file": "letter-c65c",
+    "precache": true
+  },
+  {
+    "text": "외",
+    "file": "letter-c678",
+    "precache": true
+  },
+  {
+    "text": "워",
+    "file": "letter-c6cc",
+    "precache": true
+  },
+  {
+    "text": "웨",
+    "file": "letter-c6e8",
+    "precache": true
+  },
+  {
+    "text": "위",
+    "file": "letter-c704",
+    "precache": true
+  },
+  {
+    "text": "의",
+    "file": "letter-c758",
+    "precache": true
+  },
+  {
+    "text": "가",
+    "file": "letter-ac00",
+    "precache": true
+  },
+  {
+    "text": "나",
+    "file": "letter-b098",
+    "precache": true
+  },
+  {
+    "text": "다",
+    "file": "letter-b2e4",
+    "precache": true
+  },
+  {
+    "text": "라",
+    "file": "letter-b77c",
+    "precache": true
+  },
+  {
+    "text": "마",
+    "file": "letter-b9c8",
+    "precache": true
+  },
+  {
+    "text": "바",
+    "file": "letter-bc14",
+    "precache": true
+  },
+  {
+    "text": "사",
+    "file": "letter-c0ac",
+    "precache": true
+  },
+  {
+    "text": "자",
+    "file": "letter-c790",
+    "precache": true
+  },
+  {
+    "text": "차",
+    "file": "letter-cc28",
+    "precache": true
+  },
+  {
+    "text": "카",
+    "file": "letter-ce74",
+    "precache": true
+  },
+  {
+    "text": "타",
+    "file": "letter-d0c0",
+    "precache": true
+  },
+  {
+    "text": "파",
+    "file": "letter-d30c",
+    "precache": true
+  },
+  {
+    "text": "하",
+    "file": "letter-d558",
+    "precache": true
+  },
+  {
+    "text": "까",
+    "file": "letter-ae4c",
+    "precache": true
+  },
+  {
+    "text": "따",
+    "file": "letter-b530",
+    "precache": true
+  },
+  {
+    "text": "빠",
+    "file": "letter-be60",
+    "precache": true
+  },
+  {
+    "text": "싸",
+    "file": "letter-c2f8",
+    "precache": true
+  },
+  {
+    "text": "짜",
+    "file": "letter-c9dc",
+    "precache": true
+  },
+  {
+    "text": "한",
+    "file": "sample-d55c",
+    "precache": true
+  },
+  {
+    "text": "고",
+    "file": "sample-ace0",
+    "precache": true
+  },
+  {
+    "text": "무",
+    "file": "sample-bb34",
+    "precache": true
+  },
+  {
+    "text": "안녕하세요",
+    "file": "sample-c548",
+    "precache": true
+  },
+  {
+    "text": "직업",
+    "file": "l1-1",
+    "precache": false
+  },
+  {
+    "text": "학생",
+    "file": "l1-2",
+    "precache": false
+  },
+  {
+    "text": "선생님",
+    "file": "l1-3",
+    "precache": false
+  },
+  {
+    "text": "회사원",
+    "file": "l1-4",
+    "precache": false
+  },
+  {
+    "text": "경찰",
+    "file": "l1-5",
+    "precache": false
+  },
+  {
+    "text": "기자",
+    "file": "l1-6",
+    "precache": false
+  },
+  {
+    "text": "배우",
+    "file": "l1-7",
+    "precache": false
+  },
+  {
+    "text": "가수",
+    "file": "l1-8",
+    "precache": false
+  },
+  {
+    "text": "주부",
+    "file": "l1-9",
+    "precache": false
+  },
+  {
+    "text": "의사",
+    "file": "l1-10",
+    "precache": false
+  },
+  {
+    "text": "나라",
+    "file": "l1-11",
+    "precache": false
+  },
+  {
+    "text": "한국",
+    "file": "l1-12",
+    "precache": false
+  },
+  {
+    "text": "가나",
+    "file": "l1-13",
+    "precache": false
+  },
+  {
+    "text": "독일",
+    "file": "l1-14",
+    "precache": false
+  },
+  {
+    "text": "러시아",
+    "file": "l1-15",
+    "precache": false
+  },
+  {
+    "text": "몽골",
+    "file": "l1-16",
+    "precache": false
+  },
+  {
+    "text": "미국",
+    "file": "l1-17",
+    "precache": false
+  },
+  {
+    "text": "베트남",
+    "file": "l1-18",
+    "precache": false
+  },
+  {
+    "text": "이집트",
+    "file": "l1-19",
+    "precache": false
+  },
+  {
+    "text": "일본",
+    "file": "l1-20",
+    "precache": false
+  },
+  {
+    "text": "중국",
+    "file": "l1-21",
+    "precache": false
+  },
+  {
+    "text": "프랑스",
+    "file": "l1-22",
+    "precache": false
+  },
+  {
+    "text": "호주",
+    "file": "l1-23",
+    "precache": false
+  },
+  {
+    "text": "사람",
+    "file": "l1-24",
+    "precache": false
+  },
+  {
+    "text": "자기소개",
+    "file": "l1-25",
+    "precache": false
+  },
+  {
+    "text": "이름",
+    "file": "l1-26",
+    "precache": false
+  },
+  {
+    "text": "네",
+    "file": "l1-27",
+    "precache": false
+  },
+  {
+    "text": "씨",
+    "file": "l1-28",
+    "precache": false
+  },
+  {
+    "text": "만나서 반갑습니다",
+    "file": "l1-29",
+    "precache": false
+  },
+  {
+    "text": "어느 나라 사람이에요?",
+    "file": "l1-31",
+    "precache": false
+  },
+  {
+    "text": "이름이 뭐예요?",
+    "file": "l1-32",
+    "precache": false
+  },
+  {
+    "text": "저",
+    "file": "l1-33",
+    "precache": false
+  },
+  {
+    "text": "직업이 뭐예요?",
+    "file": "l1-34",
+    "precache": false
+  },
+  {
+    "text": "교실",
+    "file": "l2-1",
+    "precache": false
+  },
+  {
+    "text": "물건",
+    "file": "l2-2",
+    "precache": false
+  },
+  {
+    "text": "책상",
+    "file": "l2-3",
+    "precache": false
+  },
+  {
+    "text": "의자",
+    "file": "l2-4",
+    "precache": false
+  },
+  {
+    "text": "칠판",
+    "file": "l2-5",
+    "precache": false
+  },
+  {
+    "text": "문",
+    "file": "l2-6",
+    "precache": false
+  },
+  {
+    "text": "창문",
+    "file": "l2-7",
+    "precache": false
+  },
+  {
+    "text": "지도",
+    "file": "l2-8",
+    "precache": false
+  },
+  {
+    "text": "시계",
+    "file": "l2-9",
+    "precache": false
+  },
+  {
+    "text": "가방",
+    "file": "l2-10",
+    "precache": false
+  },
+  {
+    "text": "책",
+    "file": "l2-11",
+    "precache": false
+  },
+  {
+    "text": "전자사전",
+    "file": "l2-12",
+    "precache": false
+  },
+  {
+    "text": "필통",
+    "file": "l2-13",
+    "precache": false
+  },
+  {
+    "text": "연필",
+    "file": "l2-14",
+    "precache": false
+  },
+  {
+    "text": "지우개",
+    "file": "l2-15",
+    "precache": false
+  },
+  {
+    "text": "볼펜",
+    "file": "l2-16",
+    "precache": false
+  },
+  {
+    "text": "핸드폰",
+    "file": "l2-17",
+    "precache": false
+  },
+  {
+    "text": "누구",
+    "file": "l2-18",
+    "precache": false
+  },
+  {
+    "text": "뭐",
+    "file": "l2-19",
+    "precache": false
+  },
+  {
+    "text": "이것",
+    "file": "l2-21",
+    "precache": false
+  },
+  {
+    "text": "제",
+    "file": "l2-22",
+    "precache": false
+  },
+  {
+    "text": "한국어",
+    "file": "l2-23",
+    "precache": false
+  },
+  {
+    "text": "그것",
+    "file": "l2-24",
+    "precache": false
+  },
+  {
+    "text": "열쇠",
+    "file": "l2-25",
+    "precache": false
+  },
+  {
+    "text": "우산",
+    "file": "l2-26",
+    "precache": false
+  },
+  {
+    "text": "저것",
+    "file": "l2-28",
+    "precache": false
+  },
+  {
+    "text": "지갑",
+    "file": "l2-29",
+    "precache": false
+  },
+  {
+    "text": "친구",
+    "file": "l2-30",
+    "precache": false
+  },
+  {
+    "text": "컴퓨터",
+    "file": "l2-31",
+    "precache": false
+  },
+  {
+    "text": "컵",
+    "file": "l2-32",
+    "precache": false
+  },
+  {
+    "text": "아니요",
+    "file": "l2-33",
+    "precache": false
+  },
+  {
+    "text": "자다",
+    "file": "l3-1",
+    "precache": false
+  },
+  {
+    "text": "만나다",
+    "file": "l3-2",
+    "precache": false
+  },
+  {
+    "text": "사다",
+    "file": "l3-3",
+    "precache": false
+  },
+  {
+    "text": "보다",
+    "file": "l3-4",
+    "precache": false
+  },
+  {
+    "text": "먹다",
+    "file": "l3-5",
+    "precache": false
+  },
+  {
+    "text": "읽다",
+    "file": "l3-6",
+    "precache": false
+  },
+  {
+    "text": "마시다",
+    "file": "l3-7",
+    "precache": false
+  },
+  {
+    "text": "기다리다",
+    "file": "l3-8",
+    "precache": false
+  },
+  {
+    "text": "가르치다",
+    "file": "l3-9",
+    "precache": false
+  },
+  {
+    "text": "배우다",
+    "file": "l3-10",
+    "precache": false
+  },
+  {
+    "text": "쉬다",
+    "file": "l3-11",
+    "precache": false
+  },
+  {
+    "text": "공부하다",
+    "file": "l3-12",
+    "precache": false
+  },
+  {
+    "text": "일하다",
+    "file": "l3-13",
+    "precache": false
+  },
+  {
+    "text": "말하다",
+    "file": "l3-14",
+    "precache": false
+  },
+  {
+    "text": "듣다",
+    "file": "l3-15",
+    "precache": false
+  },
+  {
+    "text": "쓰다",
+    "file": "l3-16",
+    "precache": false
+  },
+  {
+    "text": "하다",
+    "file": "l3-17",
+    "precache": false
+  },
+  {
+    "text": "동사",
+    "file": "l3-18",
+    "precache": false
+  },
+  {
+    "text": "카드",
+    "file": "l3-19",
+    "precache": false
+  },
+  {
+    "text": "무엇",
+    "file": "l3-20",
+    "precache": false
+  },
+  {
+    "text": "뭘",
+    "file": "l3-21",
+    "precache": false
+  },
+  {
+    "text": "지금",
+    "file": "l3-22",
+    "precache": false
+  },
+  {
+    "text": "그림",
+    "file": "l3-23",
+    "precache": false
+  },
+  {
+    "text": "녹차",
+    "file": "l3-24",
+    "precache": false
+  },
+  {
+    "text": "물",
+    "file": "l3-25",
+    "precache": false
+  },
+  {
+    "text": "밥",
+    "file": "l3-26",
+    "precache": false
+  },
+  {
+    "text": "빵",
+    "file": "l3-27",
+    "precache": false
+  },
+  {
+    "text": "사과",
+    "file": "l3-28",
+    "precache": false
+  },
+  {
+    "text": "아이스크림",
+    "file": "l3-29",
+    "precache": false
+  },
+  {
+    "text": "영어",
+    "file": "l3-30",
+    "precache": false
+  },
+  {
+    "text": "영화",
+    "file": "l3-31",
+    "precache": false
+  },
+  {
+    "text": "음악",
+    "file": "l3-32",
+    "precache": false
+  },
+  {
+    "text": "커피",
+    "file": "l3-33",
+    "precache": false
+  },
+  {
+    "text": "텔레비전",
+    "file": "l3-34",
+    "precache": false
+  },
+  {
+    "text": "편지",
+    "file": "l3-35",
+    "precache": false
+  },
+  {
+    "text": "가다",
+    "file": "l4-1",
+    "precache": false
+  },
+  {
+    "text": "다니다",
+    "file": "l4-2",
+    "precache": false
+  },
+  {
+    "text": "살다",
+    "file": "l4-3",
+    "precache": false
+  },
+  {
+    "text": "오다",
+    "file": "l4-4",
+    "precache": false
+  },
+  {
+    "text": "운동하다",
+    "file": "l4-5",
+    "precache": false
+  },
+  {
+    "text": "쇼핑하다",
+    "file": "l4-6",
+    "precache": false
+  },
+  {
+    "text": "장소",
+    "file": "l4-7",
+    "precache": false
+  },
+  {
+    "text": "학교",
+    "file": "l4-8",
+    "precache": false
+  },
+  {
+    "text": "도서관",
+    "file": "l4-9",
+    "precache": false
+  },
+  {
+    "text": "서점",
+    "file": "l4-10",
+    "precache": false
+  },
+  {
+    "text": "식당",
+    "file": "l4-11",
+    "precache": false
+  },
+  {
+    "text": "커피숍",
+    "file": "l4-12",
+    "precache": false
+  },
+  {
+    "text": "극장",
+    "file": "l4-13",
+    "precache": false
+  },
+  {
+    "text": "집",
+    "file": "l4-14",
+    "precache": false
+  },
+  {
+    "text": "기숙사",
+    "file": "l4-15",
+    "precache": false
+  },
+  {
+    "text": "회사",
+    "file": "l4-16",
+    "precache": false
+  },
+  {
+    "text": "가게",
+    "file": "l4-17",
+    "precache": false
+  },
+  {
+    "text": "백화점",
+    "file": "l4-18",
+    "precache": false
+  },
+  {
+    "text": "병원",
+    "file": "l4-19",
+    "precache": false
+  },
+  {
+    "text": "어디",
+    "file": "l4-20",
+    "precache": false
+  },
+  {
+    "text": "라면",
+    "file": "l4-21",
+    "precache": false
+  },
+  {
+    "text": "신발",
+    "file": "l4-22",
+    "precache": false
+  },
+  {
+    "text": "오늘",
+    "file": "l4-23",
+    "precache": false
+  },
+  {
+    "text": "여기",
+    "file": "l4-24",
+    "precache": false
+  },
+  {
+    "text": "거기",
+    "file": "l4-25",
+    "precache": false
+  },
+  {
+    "text": "재미있다",
+    "file": "l5-1",
+    "precache": false
+  },
+  {
+    "text": "재미없다",
+    "file": "l5-2",
+    "precache": false
+  },
+  {
+    "text": "맛있다",
+    "file": "l5-3",
+    "precache": false
+  },
+  {
+    "text": "맛없다",
+    "file": "l5-4",
+    "precache": false
+  },
+  {
+    "text": "크다",
+    "file": "l5-5",
+    "precache": false
+  },
+  {
+    "text": "작다",
+    "file": "l5-6",
+    "precache": false
+  },
+  {
+    "text": "많다",
+    "file": "l5-7",
+    "precache": false
+  },
+  {
+    "text": "적다",
+    "file": "l5-8",
+    "precache": false
+  },
+  {
+    "text": "싸다",
+    "file": "l5-9",
+    "precache": false
+  },
+  {
+    "text": "비싸다",
+    "file": "l5-10",
+    "precache": false
+  },
+  {
+    "text": "덥다",
+    "file": "l5-11",
+    "precache": false
+  },
+  {
+    "text": "춥다",
+    "file": "l5-12",
+    "precache": false
+  },
+  {
+    "text": "쉽다",
+    "file": "l5-13",
+    "precache": false
+  },
+  {
+    "text": "어렵다",
+    "file": "l5-14",
+    "precache": false
+  },
+  {
+    "text": "뜨겁다",
+    "file": "l5-15",
+    "precache": false
+  },
+  {
+    "text": "차갑다",
+    "file": "l5-16",
+    "precache": false
+  },
+  {
+    "text": "있다",
+    "file": "l5-17",
+    "precache": false
+  },
+  {
+    "text": "귀엽다",
+    "file": "l5-18",
+    "precache": false
+  },
+  {
+    "text": "좋다",
+    "file": "l5-19",
+    "precache": false
+  },
+  {
+    "text": "맵다",
+    "file": "l5-20",
+    "precache": false
+  },
+  {
+    "text": "숙제하다",
+    "file": "l5-21",
+    "precache": false
+  },
+  {
+    "text": "노래하다",
+    "file": "l5-22",
+    "precache": false
+  },
+  {
+    "text": "형용사",
+    "file": "l5-23",
+    "precache": false
+  },
+  {
+    "text": "수업",
+    "file": "l5-24",
+    "precache": false
+  },
+  {
+    "text": "공부",
+    "file": "l5-25",
+    "precache": false
+  },
+  {
+    "text": "김치",
+    "file": "l5-26",
+    "precache": false
+  },
+  {
+    "text": "날씨",
+    "file": "l5-27",
+    "precache": false
+  },
+  {
+    "text": "동생",
+    "file": "l5-28",
+    "precache": false
+  },
+  {
+    "text": "드라마",
+    "file": "l5-29",
+    "precache": false
+  },
+  {
+    "text": "옷",
+    "file": "l5-30",
+    "precache": false
+  },
+  {
+    "text": "인형",
+    "file": "l5-31",
+    "precache": false
+  },
+  {
+    "text": "비빔밥",
+    "file": "l5-32",
+    "precache": false
+  },
+  {
+    "text": "과일",
+    "file": "l5-33",
+    "precache": false
+  },
+  {
+    "text": "노래방",
+    "file": "l5-34",
+    "precache": false
+  },
+  {
+    "text": "그리고",
+    "file": "l5-35",
+    "precache": false
+  },
+  {
+    "text": "어때요?",
+    "file": "l5-36",
+    "precache": false
+  },
+  {
+    "text": "너무",
+    "file": "l5-37",
+    "precache": false
+  },
+  {
+    "text": "누가",
+    "file": "l5-38",
+    "precache": false
+  },
+  {
+    "text": "없다",
+    "file": "l6-2",
+    "precache": false
+  },
+  {
+    "text": "위치",
+    "file": "l6-3",
+    "precache": false
+  },
+  {
+    "text": "아래",
+    "file": "l6-5",
+    "precache": false
+  },
+  {
+    "text": "앞",
+    "file": "l6-6",
+    "precache": false
+  },
+  {
+    "text": "뒤",
+    "file": "l6-7",
+    "precache": false
+  },
+  {
+    "text": "안",
+    "file": "l6-8",
+    "precache": false
+  },
+  {
+    "text": "밖",
+    "file": "l6-9",
+    "precache": false
+  },
+  {
+    "text": "옆",
+    "file": "l6-10",
+    "precache": false
+  },
+  {
+    "text": "숫자",
+    "file": "l6-11",
+    "precache": false
+  },
+  {
+    "text": "영",
+    "file": "l6-12",
+    "precache": false
+  },
+  {
+    "text": "일",
+    "file": "l6-13",
+    "precache": false
+  },
+  {
+    "text": "삼",
+    "file": "l6-15",
+    "precache": false
+  },
+  {
+    "text": "육",
+    "file": "l6-18",
+    "precache": false
+  },
+  {
+    "text": "칠",
+    "file": "l6-19",
+    "precache": false
+  },
+  {
+    "text": "팔",
+    "file": "l6-20",
+    "precache": false
+  },
+  {
+    "text": "구",
+    "file": "l6-21",
+    "precache": false
+  },
+  {
+    "text": "십",
+    "file": "l6-22",
+    "precache": false
+  },
+  {
+    "text": "백",
+    "file": "l6-23",
+    "precache": false
+  },
+  {
+    "text": "천",
+    "file": "l6-24",
+    "precache": false
+  },
+  {
+    "text": "만",
+    "file": "l6-25",
+    "precache": false
+  },
+  {
+    "text": "지하",
+    "file": "l6-26",
+    "precache": false
+  },
+  {
+    "text": "층",
+    "file": "l6-27",
+    "precache": false
+  },
+  {
+    "text": "고양이",
+    "file": "l6-28",
+    "precache": false
+  },
+  {
+    "text": "나무",
+    "file": "l6-29",
+    "precache": false
+  },
+  {
+    "text": "남자",
+    "file": "l6-30",
+    "precache": false
+  },
+  {
+    "text": "달력",
+    "file": "l6-31",
+    "precache": false
+  },
+  {
+    "text": "돈",
+    "file": "l6-32",
+    "precache": false
+  },
+  {
+    "text": "방",
+    "file": "l6-33",
+    "precache": false
+  },
+  {
+    "text": "번",
+    "file": "l6-34",
+    "precache": false
+  },
+  {
+    "text": "사전",
+    "file": "l6-35",
+    "precache": false
+  },
+  {
+    "text": "약국",
+    "file": "l6-36",
+    "precache": false
+  },
+  {
+    "text": "여자",
+    "file": "l6-37",
+    "precache": false
+  },
+  {
+    "text": "자동차",
+    "file": "l6-38",
+    "precache": false
+  },
+  {
+    "text": "전화번호",
+    "file": "l6-39",
+    "precache": false
+  },
+  {
+    "text": "침대",
+    "file": "l6-40",
+    "precache": false
+  },
+  {
+    "text": "학생번호",
+    "file": "l6-41",
+    "precache": false
+  },
+  {
+    "text": "호",
+    "file": "l6-42",
+    "precache": false
+  },
+  {
+    "text": "화장실",
+    "file": "l6-43",
+    "precache": false
+  },
+  {
+    "text": "에어컨",
+    "file": "l6-44",
+    "precache": false
+  },
+  {
+    "text": "근처",
+    "file": "l6-45",
+    "precache": false
+  },
+  {
+    "text": "우체국",
+    "file": "l6-46",
+    "precache": false
+  },
+  {
+    "text": "은행",
+    "file": "l6-47",
+    "precache": false
+  },
+  {
+    "text": "편의점",
+    "file": "l6-48",
+    "precache": false
+  },
+  {
+    "text": "도",
+    "file": "l6-49",
+    "precache": false
+  },
+  {
+    "text": "깨끗하다",
+    "file": "l7-1",
+    "precache": false
+  },
+  {
+    "text": "넓다",
+    "file": "l7-2",
+    "precache": false
+  },
+  {
+    "text": "월",
+    "file": "l7-3",
+    "precache": false
+  },
+  {
+    "text": "일월",
+    "file": "l7-4",
+    "precache": false
+  },
+  {
+    "text": "이월",
+    "file": "l7-5",
+    "precache": false
+  },
+  {
+    "text": "삼월",
+    "file": "l7-6",
+    "precache": false
+  },
+  {
+    "text": "사월",
+    "file": "l7-7",
+    "precache": false
+  },
+  {
+    "text": "오월",
+    "file": "l7-8",
+    "precache": false
+  },
+  {
+    "text": "유월",
+    "file": "l7-9",
+    "precache": false
+  },
+  {
+    "text": "칠월",
+    "file": "l7-10",
+    "precache": false
+  },
+  {
+    "text": "팔월",
+    "file": "l7-11",
+    "precache": false
+  },
+  {
+    "text": "구월",
+    "file": "l7-12",
+    "precache": false
+  },
+  {
+    "text": "시월",
+    "file": "l7-13",
+    "precache": false
+  },
+  {
+    "text": "십일월",
+    "file": "l7-14",
+    "precache": false
+  },
+  {
+    "text": "십이월",
+    "file": "l7-15",
+    "precache": false
+  },
+  {
+    "text": "요일",
+    "file": "l7-16",
+    "precache": false
+  },
+  {
+    "text": "월요일",
+    "file": "l7-17",
+    "precache": false
+  },
+  {
+    "text": "화요일",
+    "file": "l7-18",
+    "precache": false
+  },
+  {
+    "text": "수요일",
+    "file": "l7-19",
+    "precache": false
+  },
+  {
+    "text": "목요일",
+    "file": "l7-20",
+    "precache": false
+  },
+  {
+    "text": "금요일",
+    "file": "l7-21",
+    "precache": false
+  },
+  {
+    "text": "토요일",
+    "file": "l7-22",
+    "precache": false
+  },
+  {
+    "text": "일요일",
+    "file": "l7-23",
+    "precache": false
+  },
+  {
+    "text": "그저께",
+    "file": "l7-24",
+    "precache": false
+  },
+  {
+    "text": "어제",
+    "file": "l7-25",
+    "precache": false
+  },
+  {
+    "text": "내일",
+    "file": "l7-27",
+    "precache": false
+  },
+  {
+    "text": "모레",
+    "file": "l7-28",
+    "precache": false
+  },
+  {
+    "text": "며칠",
+    "file": "l7-29",
+    "precache": false
+  },
+  {
+    "text": "시험",
+    "file": "l7-30",
+    "precache": false
+  },
+  {
+    "text": "언제",
+    "file": "l7-31",
+    "precache": false
+  },
+  {
+    "text": "이번",
+    "file": "l7-32",
+    "precache": false
+  },
+  {
+    "text": "주말",
+    "file": "l7-34",
+    "precache": false
+  },
+  {
+    "text": "고향",
+    "file": "l7-35",
+    "precache": false
+  },
+  {
+    "text": "김밥",
+    "file": "l7-36",
+    "precache": false
+  },
+  {
+    "text": "방학",
+    "file": "l7-37",
+    "precache": false
+  },
+  {
+    "text": "생일",
+    "file": "l7-38",
+    "precache": false
+  },
+  {
+    "text": "크리스마스",
+    "file": "l7-39",
+    "precache": false
+  },
+  {
+    "text": "표",
+    "file": "l7-40",
+    "precache": false
+  },
+  {
+    "text": "시험을 보다",
+    "file": "l7-42",
+    "precache": false
+  },
+  {
+    "text": "여행을 가다",
+    "file": "l7-43",
+    "precache": false
+  },
+  {
+    "text": "파티를 하다",
+    "file": "l7-44",
+    "precache": false
+  },
+  {
+    "text": "옷을 사다",
+    "file": "l7-45",
+    "precache": false
+  },
+  {
+    "text": "영화를 보다",
+    "file": "l7-46",
+    "precache": false
+  },
+  {
+    "text": "고향에 가다",
+    "file": "l7-47",
+    "precache": false
+  },
+  {
+    "text": "좋아요",
+    "file": "l7-48",
+    "precache": false
+  },
+  {
+    "text": "시간이 있다",
+    "file": "l7-49",
+    "precache": false
+  },
+  {
+    "text": "들",
+    "file": "l7-50",
+    "precache": false
+  },
+  {
+    "text": "그럼",
+    "file": "l7-51",
+    "precache": false
+  },
+  {
+    "text": "여행 하다",
+    "file": "l8-2",
+    "precache": false
+  },
+  {
+    "text": "산책 하다",
+    "file": "l8-3",
+    "precache": false
+  },
+  {
+    "text": "요리 하다",
+    "file": "l8-4",
+    "precache": false
+  },
+  {
+    "text": "청소 하다",
+    "file": "l8-5",
+    "precache": false
+  },
+  {
+    "text": "빨래 하다",
+    "file": "l8-6",
+    "precache": false
+  },
+  {
+    "text": "이야기 하다",
+    "file": "l8-8",
+    "precache": false
+  },
+  {
+    "text": "아르바이트 하다",
+    "file": "l8-9",
+    "precache": false
+  },
+  {
+    "text": "샤워 하다",
+    "file": "l8-10",
+    "precache": false
+  },
+  {
+    "text": "데이트 하다",
+    "file": "l8-12",
+    "precache": false
+  },
+  {
+    "text": "놀다",
+    "file": "l8-13",
+    "precache": false
+  },
+  {
+    "text": "명동",
+    "file": "l8-14",
+    "precache": false
+  },
+  {
+    "text": "가족",
+    "file": "l8-16",
+    "precache": false
+  },
+  {
+    "text": "공원",
+    "file": "l8-17",
+    "precache": false
+  },
+  {
+    "text": "놀이공원",
+    "file": "l8-18",
+    "precache": false
+  },
+  {
+    "text": "서울",
+    "file": "l8-19",
+    "precache": false
+  },
+  {
+    "text": "아침",
+    "file": "l8-20",
+    "precache": false
+  },
+  {
+    "text": "작년",
+    "file": "l8-21",
+    "precache": false
+  },
+  {
+    "text": "지난",
+    "file": "l8-22",
+    "precache": false
+  },
+  {
+    "text": "혼자",
+    "file": "l8-23",
+    "precache": false
+  },
+  {
+    "text": "지난주",
+    "file": "l8-24",
+    "precache": false
+  },
+  {
+    "text": "어땠어요?",
+    "file": "l8-25",
+    "precache": false
+  },
+  {
+    "text": "피곤하다",
+    "file": "l9-1",
+    "precache": false
+  },
+  {
+    "text": "시작하다",
+    "file": "l9-2",
+    "precache": false
+  },
+  {
+    "text": "일어나다",
+    "file": "l9-3",
+    "precache": false
+  },
+  {
+    "text": "세수를 하다",
+    "file": "l9-4",
+    "precache": false
+  },
+  {
+    "text": "시간",
+    "file": "l9-5",
+    "precache": false
+  },
+  {
+    "text": "하나",
+    "file": "l9-6",
+    "precache": false
+  },
+  {
+    "text": "둘",
+    "file": "l9-7",
+    "precache": false
+  },
+  {
+    "text": "셋",
+    "file": "l9-8",
+    "precache": false
+  },
+  {
+    "text": "넷",
+    "file": "l9-9",
+    "precache": false
+  },
+  {
+    "text": "다섯",
+    "file": "l9-10",
+    "precache": false
+  },
+  {
+    "text": "여섯",
+    "file": "l9-11",
+    "precache": false
+  },
+  {
+    "text": "일곱",
+    "file": "l9-12",
+    "precache": false
+  },
+  {
+    "text": "여덟",
+    "file": "l9-13",
+    "precache": false
+  },
+  {
+    "text": "아홉",
+    "file": "l9-14",
+    "precache": false
+  },
+  {
+    "text": "열",
+    "file": "l9-15",
+    "precache": false
+  },
+  {
+    "text": "열 하나",
+    "file": "l9-16",
+    "precache": false
+  },
+  {
+    "text": "열 둘",
+    "file": "l9-17",
+    "precache": false
+  },
+  {
+    "text": "시",
+    "file": "l9-18",
+    "precache": false
+  },
+  {
+    "text": "분",
+    "file": "l9-19",
+    "precache": false
+  },
+  {
+    "text": "밤",
+    "file": "l9-20",
+    "precache": false
+  },
+  {
+    "text": "오후",
+    "file": "l9-21",
+    "precache": false
+  },
+  {
+    "text": "그렇지만",
+    "file": "l9-22",
+    "precache": false
+  },
+  {
+    "text": "아주",
+    "file": "l9-23",
+    "precache": false
+  },
+  {
+    "text": "조금",
+    "file": "l9-24",
+    "precache": false
+  },
+  {
+    "text": "매일",
+    "file": "l9-25",
+    "precache": false
+  },
+  {
+    "text": "보통",
+    "file": "l9-26",
+    "precache": false
+  },
+  {
+    "text": "더럽다",
+    "file": "l10-1",
+    "precache": false
+  },
+  {
+    "text": "아프다",
+    "file": "l10-2",
+    "precache": false
+  },
+  {
+    "text": "주다",
+    "file": "l10-3",
+    "precache": false
+  },
+  {
+    "text": "닫다",
+    "file": "l10-4",
+    "precache": false
+  },
+  {
+    "text": "버리다",
+    "file": "l10-5",
+    "precache": false
+  },
+  {
+    "text": "씻다",
+    "file": "l10-6",
+    "precache": false
+  },
+  {
+    "text": "앉다",
+    "file": "l10-7",
+    "precache": false
+  },
+  {
+    "text": "타다",
+    "file": "l10-8",
+    "precache": false
+  },
+  {
+    "text": "원",
+    "file": "l10-10",
+    "precache": false
+  },
+  {
+    "text": "단위 명사",
+    "file": "l10-11",
+    "precache": false
+  },
+  {
+    "text": "개",
+    "file": "l10-12",
+    "precache": false
+  },
+  {
+    "text": "명",
+    "file": "l10-13",
+    "precache": false
+  },
+  {
+    "text": "그릇",
+    "file": "l10-14",
+    "precache": false
+  },
+  {
+    "text": "잔",
+    "file": "l10-15",
+    "precache": false
+  },
+  {
+    "text": "권",
+    "file": "l10-16",
+    "precache": false
+  },
+  {
+    "text": "병",
+    "file": "l10-17",
+    "precache": false
+  },
+  {
+    "text": "햄버거",
+    "file": "l10-18",
+    "precache": false
+  },
+  {
+    "text": "바나나",
+    "file": "l10-19",
+    "precache": false
+  },
+  {
+    "text": "맥주",
+    "file": "l10-20",
+    "precache": false
+  },
+  {
+    "text": "콜라",
+    "file": "l10-21",
+    "precache": false
+  },
+  {
+    "text": "아저씨",
+    "file": "l10-22",
+    "precache": false
+  },
+  {
+    "text": "공책",
+    "file": "l10-23",
+    "precache": false
+  },
+  {
+    "text": "다리",
+    "file": "l10-24",
+    "precache": false
+  },
+  {
+    "text": "박물관",
+    "file": "l10-25",
+    "precache": false
+  },
+  {
+    "text": "손",
+    "file": "l10-26",
+    "precache": false
+  },
+  {
+    "text": "술",
+    "file": "l10-27",
+    "precache": false
+  },
+  {
+    "text": "쓰레기",
+    "file": "l10-28",
+    "precache": false
+  },
+  {
+    "text": "지하철",
+    "file": "l10-29",
+    "precache": false
+  },
+  {
+    "text": "과자",
+    "file": "l10-30",
+    "precache": false
+  },
+  {
+    "text": "비누",
+    "file": "l10-31",
+    "precache": false
+  },
+  {
+    "text": "샴푸",
+    "file": "l10-32",
+    "precache": false
+  },
+  {
+    "text": "손님",
+    "file": "l10-33",
+    "precache": false
+  },
+  {
+    "text": "수건",
+    "file": "l10-34",
+    "precache": false
+  },
+  {
+    "text": "주스",
+    "file": "l10-35",
+    "precache": false
+  },
+  {
+    "text": "치약",
+    "file": "l10-36",
+    "precache": false
+  },
+  {
+    "text": "칫솔",
+    "file": "l10-37",
+    "precache": false
+  },
+  {
+    "text": "모두",
+    "file": "l10-38",
+    "precache": false
+  },
+  {
+    "text": "하고",
+    "file": "l10-39",
+    "precache": false
+  },
+  {
+    "text": "빨리",
+    "file": "l10-40",
+    "precache": false
+  },
+  {
+    "text": "일찍",
+    "file": "l10-41",
+    "precache": false
+  },
+  {
+    "text": "감사합니다",
+    "file": "l10-42",
+    "precache": false
+  },
+  {
+    "text": "잠깐만 기다리세요",
+    "file": "l10-43",
+    "precache": false
+  },
+  {
+    "text": "또 오세요",
+    "file": "l10-44",
+    "precache": false
+  },
+  {
+    "text": "얼마예요?",
+    "file": "l10-45",
+    "precache": false
+  },
+  {
+    "text": "담배를 피우다",
+    "file": "l10-46",
+    "precache": false
+  },
+  {
+    "text": "인사 하다",
+    "file": "l10-47",
+    "precache": false
+  },
+  {
+    "text": "사진 찍다",
+    "file": "l10-48",
+    "precache": false
+  },
+  {
+    "text": "어서 오세요",
+    "file": "l10-49",
+    "precache": false
+  },
+  {
+    "text": "미안하다",
+    "file": "l11-1",
+    "precache": false
+  },
+  {
+    "text": "바쁘다",
+    "file": "l11-2",
+    "precache": false
+  },
+  {
+    "text": "나쁘다",
+    "file": "l11-3",
+    "precache": false
+  },
+  {
+    "text": "슬프다",
+    "file": "l11-4",
+    "precache": false
+  },
+  {
+    "text": "예쁘다",
+    "file": "l11-5",
+    "precache": false
+  },
+  {
+    "text": "끄다",
+    "file": "l11-6",
+    "precache": false
+  },
+  {
+    "text": "알다",
+    "file": "l11-7",
+    "precache": false
+  },
+  {
+    "text": "배가 고프다",
+    "file": "l11-8",
+    "precache": false
+  },
+  {
+    "text": "연습 하다",
+    "file": "l11-9",
+    "precache": false
+  },
+  {
+    "text": "회의",
+    "file": "l11-10",
+    "precache": false
+  },
+  {
+    "text": "구두",
+    "file": "l11-11",
+    "precache": false
+  },
+  {
+    "text": "냉면",
+    "file": "l11-12",
+    "precache": false
+  },
+  {
+    "text": "눈",
+    "file": "l11-13",
+    "precache": false
+  },
+  {
+    "text": "돈가스",
+    "file": "l11-14",
+    "precache": false
+  },
+  {
+    "text": "버스",
+    "file": "l11-15",
+    "precache": false
+  },
+  {
+    "text": "점심",
+    "file": "l11-16",
+    "precache": false
+  },
+  {
+    "text": "제주도",
+    "file": "l11-17",
+    "precache": false
+  },
+  {
+    "text": "화장품",
+    "file": "l11-18",
+    "precache": false
+  },
+  {
+    "text": "그래서",
+    "file": "l11-19",
+    "precache": false
+  },
+  {
+    "text": "그런데",
+    "file": "l11-20",
+    "precache": false
+  },
+  {
+    "text": "좋아하다",
+    "file": "l12-1",
+    "precache": false
+  },
+  {
+    "text": "싫어하다",
+    "file": "l12-2",
+    "precache": false
+  },
+  {
+    "text": "음식",
+    "file": "l12-3",
+    "precache": false
+  },
+  {
+    "text": "불고기",
+    "file": "l12-5",
+    "precache": false
+  },
+  {
+    "text": "잡채",
+    "file": "l12-6",
+    "precache": false
+  },
+  {
+    "text": "김치찌개",
+    "file": "l12-7",
+    "precache": false
+  },
+  {
+    "text": "된장찌개",
+    "file": "l12-8",
+    "precache": false
+  },
+  {
+    "text": "삼겹살",
+    "file": "l12-10",
+    "precache": false
+  },
+  {
+    "text": "삼계탕",
+    "file": "l12-11",
+    "precache": false
+  },
+  {
+    "text": "갈비",
+    "file": "l12-12",
+    "precache": false
+  },
+  {
+    "text": "딸기",
+    "file": "l12-14",
+    "precache": false
+  },
+  {
+    "text": "포도",
+    "file": "l12-15",
+    "precache": false
+  },
+  {
+    "text": "수박",
+    "file": "l12-16",
+    "precache": false
+  },
+  {
+    "text": "복숭아",
+    "file": "l12-17",
+    "precache": false
+  },
+  {
+    "text": "귤",
+    "file": "l12-18",
+    "precache": false
+  },
+  {
+    "text": "배",
+    "file": "l12-19",
+    "precache": false
+  },
+  {
+    "text": "감",
+    "file": "l12-20",
+    "precache": false
+  },
+  {
+    "text": "동물",
+    "file": "l12-22",
+    "precache": false
+  },
+  {
+    "text": "뱀",
+    "file": "l12-23",
+    "precache": false
+  },
+  {
+    "text": "사자",
+    "file": "l12-24",
+    "precache": false
+  },
+  {
+    "text": "야구",
+    "file": "l12-25",
+    "precache": false
+  },
+  {
+    "text": "우리",
+    "file": "l12-26",
+    "precache": false
+  },
+  {
+    "text": "운동",
+    "file": "l12-27",
+    "precache": false
+  },
+  {
+    "text": "일본어",
+    "file": "l12-28",
+    "precache": false
+  },
+  {
+    "text": "쥐",
+    "file": "l12-29",
+    "precache": false
+  },
+  {
+    "text": "축구",
+    "file": "l12-30",
+    "precache": false
+  },
+  {
+    "text": "코끼리",
+    "file": "l12-31",
+    "precache": false
+  },
+  {
+    "text": "토끼",
+    "file": "l12-32",
+    "precache": false
+  },
+  {
+    "text": "공포",
+    "file": "l12-33",
+    "precache": false
+  },
+  {
+    "text": "막걸리",
+    "file": "l12-34",
+    "precache": false
+  },
+  {
+    "text": "멜로드라마",
+    "file": "l12-35",
+    "precache": false
+  },
+  {
+    "text": "소주",
+    "file": "l12-36",
+    "precache": false
+  },
+  {
+    "text": "액션",
+    "file": "l12-37",
+    "precache": false
+  },
+  {
+    "text": "와인",
+    "file": "l12-38",
+    "precache": false
+  },
+  {
+    "text": "코미디",
+    "file": "l12-39",
+    "precache": false
+  },
+  {
+    "text": "가끔",
+    "file": "l12-40",
+    "precache": false
+  },
+  {
+    "text": "자주",
+    "file": "l12-41",
+    "precache": false
+  },
+  {
+    "text": "요즘",
+    "file": "l12-42",
+    "precache": false
+  },
+  {
+    "text": "그래요?",
+    "file": "l12-43",
+    "precache": false
+  },
+  {
+    "text": "늦다",
+    "file": "l13-1",
+    "precache": false
+  },
+  {
+    "text": "복잡하다",
+    "file": "l13-2",
+    "precache": false
+  },
+  {
+    "text": "빠르다",
+    "file": "l13-3",
+    "precache": false
+  },
+  {
+    "text": "시키다",
+    "file": "l13-4",
+    "precache": false
+  },
+  {
+    "text": "가져 오다",
+    "file": "l13-5",
+    "precache": false
+  },
+  {
+    "text": "받다",
+    "file": "l13-6",
+    "precache": false
+  },
+  {
+    "text": "인분",
+    "file": "l13-7",
+    "precache": false
+  },
+  {
+    "text": "달",
+    "file": "l13-8",
+    "precache": false
+  },
+  {
+    "text": "떡볶이",
+    "file": "l13-9",
+    "precache": false
+  },
+  {
+    "text": "발음",
+    "file": "l13-10",
+    "precache": false
+  },
+  {
+    "text": "별",
+    "file": "l13-11",
+    "precache": false
+  },
+  {
+    "text": "부모님",
+    "file": "l13-12",
+    "precache": false
+  },
+  {
+    "text": "약속",
+    "file": "l13-14",
+    "precache": false
+  },
+  {
+    "text": "외국 사람",
+    "file": "l13-15",
+    "precache": false
+  },
+  {
+    "text": "이메일",
+    "file": "l13-16",
+    "precache": false
+  },
+  {
+    "text": "커튼",
+    "file": "l13-17",
+    "precache": false
+  },
+  {
+    "text": "만두",
+    "file": "l13-19",
+    "precache": false
+  },
+  {
+    "text": "메뉴",
+    "file": "l13-20",
+    "precache": false
+  },
+  {
+    "text": "메뉴판",
+    "file": "l13-21",
+    "precache": false
+  },
+  {
+    "text": "오렌지",
+    "file": "l13-22",
+    "precache": false
+  },
+  {
+    "text": "우유",
+    "file": "l13-23",
+    "precache": false
+  },
+  {
+    "text": "새우",
+    "file": "l13-24",
+    "precache": false
+  },
+  {
+    "text": "종업원",
+    "file": "l13-25",
+    "precache": false
+  },
+  {
+    "text": "치킨",
+    "file": "l13-26",
+    "precache": false
+  },
+  {
+    "text": "제일",
+    "file": "l13-27",
+    "precache": false
+  },
+  {
+    "text": "여기요",
+    "file": "l13-28",
+    "precache": false
+  },
+  {
+    "text": "보고 싶다",
+    "file": "l13-29",
+    "precache": false
+  },
+  {
+    "text": "잠을 자다",
+    "file": "l13-30",
+    "precache": false
+  },
+  {
+    "text": "키가 크다",
+    "file": "l13-31",
+    "precache": false
+  },
+  {
+    "text": "키가 작다",
+    "file": "l13-32",
+    "precache": false
+  },
+  {
+    "text": "그래요",
+    "file": "l13-33",
+    "precache": false
+  },
+  {
+    "text": "뭘 드릴까요?",
+    "file": "l13-34",
+    "precache": false
+  },
+  {
+    "text": "여기 있어요",
+    "file": "l13-35",
+    "precache": false
+  },
+  {
+    "text": "잠이 오다",
+    "file": "l13-36",
+    "precache": false
+  },
+  {
+    "text": "그림을 그리다",
+    "file": "l14-1",
+    "precache": false
+  },
+  {
+    "text": "춤을 추다",
+    "file": "l14-3",
+    "precache": false
+  },
+  {
+    "text": "자전거를 타다",
+    "file": "l14-4",
+    "precache": false
+  },
+  {
+    "text": "등산 하다",
+    "file": "l14-5",
+    "precache": false
+  },
+  {
+    "text": "태권도 하다",
+    "file": "l14-7",
+    "precache": false
+  },
+  {
+    "text": "요가 하다",
+    "file": "l14-8",
+    "precache": false
+  },
+  {
+    "text": "게임 하다",
+    "file": "l14-9",
+    "precache": false
+  },
+  {
+    "text": "결혼 하다",
+    "file": "l14-10",
+    "precache": false
+  },
+  {
+    "text": "바꾸다",
+    "file": "l14-11",
+    "precache": false
+  },
+  {
+    "text": "보내다",
+    "file": "l14-12",
+    "precache": false
+  },
+  {
+    "text": "빌리다",
+    "file": "l14-13",
+    "precache": false
+  },
+  {
+    "text": "취미",
+    "file": "l14-14",
+    "precache": false
+  },
+  {
+    "text": "아이",
+    "file": "l14-16",
+    "precache": false
+  },
+  {
+    "text": "자전거",
+    "file": "l14-17",
+    "precache": false
+  },
+  {
+    "text": "한강",
+    "file": "l14-18",
+    "precache": false
+  },
+  {
+    "text": "꽃",
+    "file": "l14-19",
+    "precache": false
+  },
+  {
+    "text": "내년",
+    "file": "l14-20",
+    "precache": false
+  },
+  {
+    "text": "바다",
+    "file": "l14-21",
+    "precache": false
+  },
+  {
+    "text": "산",
+    "file": "l14-22",
+    "precache": false
+  },
+  {
+    "text": "선물",
+    "file": "l14-23",
+    "precache": false
+  },
+  {
+    "text": "소포",
+    "file": "l14-24",
+    "precache": false
+  },
+  {
+    "text": "시장",
+    "file": "l14-25",
+    "precache": false
+  },
+  {
+    "text": "올해",
+    "file": "l14-26",
+    "precache": false
+  },
+  {
+    "text": "운동장",
+    "file": "l14-27",
+    "precache": false
+  },
+  {
+    "text": "유학",
+    "file": "l14-28",
+    "precache": false
+  },
+  {
+    "text": "헬스클럽",
+    "file": "l14-29",
+    "precache": false
+  },
+  {
+    "text": "호수",
+    "file": "l14-30",
+    "precache": false
+  },
+  {
+    "text": "다음",
+    "file": "l14-31",
+    "precache": false
+  },
+  {
+    "text": "부산",
+    "file": "l14-32",
+    "precache": false
+  },
+  {
+    "text": "주",
+    "file": "l14-33",
+    "precache": false
+  },
+  {
+    "text": "쯤",
+    "file": "l14-35",
+    "precache": false
+  },
+  {
+    "text": "에게",
+    "file": "l14-36",
+    "precache": false
+  },
+  {
+    "text": "많이",
+    "file": "l14-37",
+    "precache": false
+  },
+  {
+    "text": "맞다",
+    "file": "l15-1",
+    "precache": false
+  },
+  {
+    "text": "친절하다",
+    "file": "l15-2",
+    "precache": false
+  },
+  {
+    "text": "농구 하다",
+    "file": "l15-3",
+    "precache": false
+  },
+  {
+    "text": "축구 하다",
+    "file": "l15-4",
+    "precache": false
+  },
+  {
+    "text": "야구 하다",
+    "file": "l15-5",
+    "precache": false
+  },
+  {
+    "text": "수영 하다",
+    "file": "l15-6",
+    "precache": false
+  },
+  {
+    "text": "스케이트 타다",
+    "file": "l15-7",
+    "precache": false
+  },
+  {
+    "text": "스키 타다",
+    "file": "l15-8",
+    "precache": false
+  },
+  {
+    "text": "골프를 치다",
+    "file": "l15-9",
+    "precache": false
+  },
+  {
+    "text": "볼링을 치다",
+    "file": "l15-10",
+    "precache": false
+  },
+  {
+    "text": "테니스를 치다",
+    "file": "l15-11",
+    "precache": false
+  },
+  {
+    "text": "피아노를 치다",
+    "file": "l15-12",
+    "precache": false
+  },
+  {
+    "text": "기타를 치다",
+    "file": "l15-13",
+    "precache": false
+  },
+  {
+    "text": "드럼을 치다",
+    "file": "l15-14",
+    "precache": false
+  },
+  {
+    "text": "머리 하다",
+    "file": "l15-15",
+    "precache": false
+  },
+  {
+    "text": "통화 하다",
+    "file": "l15-16",
+    "precache": false
+  },
+  {
+    "text": "치다",
+    "file": "l15-17",
+    "precache": false
+  },
+  {
+    "text": "찾다",
+    "file": "l15-18",
+    "precache": false
+  },
+  {
+    "text": "악기",
+    "file": "l15-19",
+    "precache": false
+  },
+  {
+    "text": "전",
+    "file": "l15-20",
+    "precache": false
+  },
+  {
+    "text": "처음",
+    "file": "l15-21",
+    "precache": false
+  },
+  {
+    "text": "피아노",
+    "file": "l15-22",
+    "precache": false
+  },
+  {
+    "text": "중국어",
+    "file": "l15-23",
+    "precache": false
+  },
+  {
+    "text": "후",
+    "file": "l15-24",
+    "precache": false
+  },
+  {
+    "text": "신문",
+    "file": "l15-25",
+    "precache": false
+  },
+  {
+    "text": "미용실",
+    "file": "l15-26",
+    "precache": false
+  },
+  {
+    "text": "저녁",
+    "file": "l15-27",
+    "precache": false
+  },
+  {
+    "text": "외국어",
+    "file": "l15-28",
+    "precache": false
+  },
+  {
+    "text": "학원",
+    "file": "l15-29",
+    "precache": false
+  },
+  {
+    "text": "호텔",
+    "file": "l15-30",
+    "precache": false
+  },
+  {
+    "text": "그러니까",
+    "file": "l15-31",
+    "precache": false
+  },
+  {
+    "text": "잠깐",
+    "file": "l15-32",
+    "precache": false
+  },
+  {
+    "text": "올라가다",
+    "file": "l16-1",
+    "precache": false
+  },
+  {
+    "text": "내려가다",
+    "file": "l16-2",
+    "precache": false
+  },
+  {
+    "text": "나가다",
+    "file": "l16-3",
+    "precache": false
+  },
+  {
+    "text": "들어오다",
+    "file": "l16-4",
+    "precache": false
+  },
+  {
+    "text": "가깝다",
+    "file": "l16-5",
+    "precache": false
+  },
+  {
+    "text": "건너다",
+    "file": "l16-6",
+    "precache": false
+  },
+  {
+    "text": "멀다",
+    "file": "l16-7",
+    "precache": false
+  },
+  {
+    "text": "세일 하다",
+    "file": "l16-8",
+    "precache": false
+  },
+  {
+    "text": "시끄럽다",
+    "file": "l16-9",
+    "precache": false
+  },
+  {
+    "text": "오른쪽",
+    "file": "l16-10",
+    "precache": false
+  },
+  {
+    "text": "왼쪽",
+    "file": "l16-11",
+    "precache": false
+  },
+  {
+    "text": "곧장",
+    "file": "l16-12",
+    "precache": false
+  },
+  {
+    "text": "건너편",
+    "file": "l16-13",
+    "precache": false
+  },
+  {
+    "text": "사거리",
+    "file": "l16-14",
+    "precache": false
+  },
+  {
+    "text": "길",
+    "file": "l16-15",
+    "precache": false
+  },
+  {
+    "text": "기분",
+    "file": "l16-16",
+    "precache": false
+  },
+  {
+    "text": "사무실",
+    "file": "l16-17",
+    "precache": false
+  },
+  {
+    "text": "새",
+    "file": "l16-18",
+    "precache": false
+  },
+  {
+    "text": "서비스",
+    "file": "l16-19",
+    "precache": false
+  },
+  {
+    "text": "엘리베이터",
+    "file": "l16-20",
+    "precache": false
+  },
+  {
+    "text": "연예인",
+    "file": "l16-21",
+    "precache": false
+  },
+  {
+    "text": "이쪽",
+    "file": "l16-22",
+    "precache": false
+  },
+  {
+    "text": "지하철역",
+    "file": "l16-23",
+    "precache": false
+  },
+  {
+    "text": "한국말",
+    "file": "l16-24",
+    "precache": false
+  },
+  {
+    "text": "그러면",
+    "file": "l16-25",
+    "precache": false
+  },
+  {
+    "text": "실례합니다",
+    "file": "l16-26",
+    "precache": false
+  },
+  {
+    "text": "쭉",
+    "file": "l16-27",
+    "precache": false
+  },
+  {
+    "text": "갈아타다",
+    "file": "l17-1",
+    "precache": false
+  },
+  {
+    "text": "걷다",
+    "file": "l17-2",
+    "precache": false
+  },
+  {
+    "text": "걸리다",
+    "file": "l17-3",
+    "precache": false
+  },
+  {
+    "text": "내리다",
+    "file": "l17-4",
+    "precache": false
+  },
+  {
+    "text": "타고 가다",
+    "file": "l17-5",
+    "precache": false
+  },
+  {
+    "text": "모르다",
+    "file": "l17-6",
+    "precache": false
+  },
+  {
+    "text": "묻다",
+    "file": "l17-7",
+    "precache": false
+  },
+  {
+    "text": "심심하다",
+    "file": "l17-8",
+    "precache": false
+  },
+  {
+    "text": "잘하다",
+    "file": "l17-9",
+    "precache": false
+  },
+  {
+    "text": "택시",
+    "file": "l17-11",
+    "precache": false
+  },
+  {
+    "text": "오토바이",
+    "file": "l17-13",
+    "precache": false
+  },
+  {
+    "text": "기차",
+    "file": "l17-14",
+    "precache": false
+  },
+  {
+    "text": "비행기",
+    "file": "l17-16",
+    "precache": false
+  },
+  {
+    "text": "역",
+    "file": "l17-17",
+    "precache": false
+  },
+  {
+    "text": "호선",
+    "file": "l17-18",
+    "precache": false
+  },
+  {
+    "text": "모델",
+    "file": "l17-19",
+    "precache": false
+  },
+  {
+    "text": "버스 정류장",
+    "file": "l17-20",
+    "precache": false
+  },
+  {
+    "text": "공항버스",
+    "file": "l17-21",
+    "precache": false
+  },
+  {
+    "text": "인천공항",
+    "file": "l17-22",
+    "precache": false
+  },
+  {
+    "text": "국립중앙박물관",
+    "file": "l17-23",
+    "precache": false
+  },
+  {
+    "text": "서울역",
+    "file": "l17-24",
+    "precache": false
+  },
+  {
+    "text": "서울타워",
+    "file": "l17-25",
+    "precache": false
+  },
+  {
+    "text": "이태원",
+    "file": "l17-26",
+    "precache": false
+  },
+  {
+    "text": "출입국관리사무소",
+    "file": "l17-27",
+    "precache": false
+  },
+  {
+    "text": "다음에",
+    "file": "l17-28",
+    "precache": false
+  },
+  {
+    "text": "어떻게",
+    "file": "l17-29",
+    "precache": false
+  },
+  {
+    "text": "얼마나",
+    "file": "l17-30",
+    "precache": false
+  },
+  {
+    "text": "에서",
+    "file": "l17-31",
+    "precache": false
+  },
+  {
+    "text": "길이 막히다",
+    "file": "l17-32",
+    "precache": false
+  },
+  {
+    "text": "꼭",
+    "file": "l17-33",
+    "precache": false
+  },
+  {
+    "text": "아이고",
+    "file": "l17-34",
+    "precache": false
+  },
+  {
+    "text": "보이다",
+    "file": "l18-1",
+    "precache": false
+  },
+  {
+    "text": "계산 하다",
+    "file": "l18-2",
+    "precache": false
+  },
+  {
+    "text": "연락 하다",
+    "file": "l18-3",
+    "precache": false
+  },
+  {
+    "text": "전화 하다",
+    "file": "l18-4",
+    "precache": false
+  },
+  {
+    "text": "켜다",
+    "file": "l18-5",
+    "precache": false
+  },
+  {
+    "text": "포장 하다",
+    "file": "l18-6",
+    "precache": false
+  },
+  {
+    "text": "고맙다",
+    "file": "l18-7",
+    "precache": false
+  },
+  {
+    "text": "드시다",
+    "file": "l18-8",
+    "precache": false
+  },
+  {
+    "text": "벗다",
+    "file": "l18-9",
+    "precache": false
+  },
+  {
+    "text": "사랑하다",
+    "file": "l18-10",
+    "precache": false
+  },
+  {
+    "text": "가격",
+    "file": "l18-11",
+    "precache": false
+  },
+  {
+    "text": "디자인",
+    "file": "l18-12",
+    "precache": false
+  },
+  {
+    "text": "인기",
+    "file": "l18-13",
+    "precache": false
+  },
+  {
+    "text": "점원",
+    "file": "l18-14",
+    "precache": false
+  },
+  {
+    "text": "달러",
+    "file": "l18-15",
+    "precache": false
+  },
+  {
+    "text": "문제",
+    "file": "l18-16",
+    "precache": false
+  },
+  {
+    "text": "여권",
+    "file": "l18-17",
+    "precache": false
+  },
+  {
+    "text": "공짜",
+    "file": "l18-18",
+    "precache": false
+  },
+  {
+    "text": "판",
+    "file": "l18-19",
+    "precache": false
+  },
+  {
+    "text": "피자",
+    "file": "l18-20",
+    "precache": false
+  },
+  {
+    "text": "다시",
+    "file": "l18-22",
+    "precache": false
+  },
+  {
+    "text": "먼저",
+    "file": "l18-23",
+    "precache": false
+  },
+  {
+    "text": "이따가",
+    "file": "l18-24",
+    "precache": false
+  },
+  {
+    "text": "맛있게 드세요",
+    "file": "l18-25",
+    "precache": false
+  },
+  {
+    "text": "열심히",
+    "file": "l18-26",
+    "precache": false
+  },
+  {
+    "text": "괜찮다",
+    "file": "l19-1",
+    "precache": false
+  },
+  {
+    "text": "늦잠 자다",
+    "file": "l19-3",
+    "precache": false
+  },
+  {
+    "text": "다치다",
+    "file": "l19-4",
+    "precache": false
+  },
+  {
+    "text": "헤어지다",
+    "file": "l19-5",
+    "precache": false
+  },
+  {
+    "text": "기침 하다",
+    "file": "l19-6",
+    "precache": false
+  },
+  {
+    "text": "주사 맞다",
+    "file": "l19-7",
+    "precache": false
+  },
+  {
+    "text": "콧물 나다",
+    "file": "l19-8",
+    "precache": false
+  },
+  {
+    "text": "머리",
+    "file": "l19-9",
+    "precache": false
+  },
+  {
+    "text": "얼굴",
+    "file": "l19-10",
+    "precache": false
+  },
+  {
+    "text": "코",
+    "file": "l19-12",
+    "precache": false
+  },
+  {
+    "text": "입",
+    "file": "l19-13",
+    "precache": false
+  },
+  {
+    "text": "귀",
+    "file": "l19-14",
+    "precache": false
+  },
+  {
+    "text": "목",
+    "file": "l19-15",
+    "precache": false
+  },
+  {
+    "text": "어깨",
+    "file": "l19-16",
+    "precache": false
+  },
+  {
+    "text": "허리",
+    "file": "l19-19",
+    "precache": false
+  },
+  {
+    "text": "무릎",
+    "file": "l19-22",
+    "precache": false
+  },
+  {
+    "text": "발",
+    "file": "l19-23",
+    "precache": false
+  },
+  {
+    "text": "약",
+    "file": "l19-24",
+    "precache": false
+  },
+  {
+    "text": "식사",
+    "file": "l19-25",
+    "precache": false
+  },
+  {
+    "text": "환자",
+    "file": "l19-27",
+    "precache": false
+  },
+  {
+    "text": "잘",
+    "file": "l19-28",
+    "precache": false
+  },
+  {
+    "text": "푹",
+    "file": "l19-29",
+    "precache": false
+  },
+  {
+    "text": "열이 나다",
+    "file": "l19-30",
+    "precache": false
+  },
+  {
+    "text": "무겁다",
+    "file": "l20-1",
+    "precache": false
+  },
+  {
+    "text": "가볍다",
+    "file": "l20-2",
+    "precache": false
+  },
+  {
+    "text": "두껍다",
+    "file": "l20-3",
+    "precache": false
+  },
+  {
+    "text": "얇다",
+    "file": "l20-4",
+    "precache": false
+  },
+  {
+    "text": "좁다",
+    "file": "l20-6",
+    "precache": false
+  },
+  {
+    "text": "길다",
+    "file": "l20-7",
+    "precache": false
+  },
+  {
+    "text": "짧다",
+    "file": "l20-8",
+    "precache": false
+  },
+  {
+    "text": "높다",
+    "file": "l20-9",
+    "precache": false
+  },
+  {
+    "text": "낮다",
+    "file": "l20-10",
+    "precache": false
+  },
+  {
+    "text": "똑똑하다",
+    "file": "l20-14",
+    "precache": false
+  },
+  {
+    "text": "신다",
+    "file": "l20-15",
+    "precache": false
+  },
+  {
+    "text": "날씬하다",
+    "file": "l20-16",
+    "precache": false
+  },
+  {
+    "text": "다이어트 하다",
+    "file": "l20-17",
+    "precache": false
+  },
+  {
+    "text": "멋있다",
+    "file": "l20-18",
+    "precache": false
+  },
+  {
+    "text": "모자를 쓰다",
+    "file": "l20-19",
+    "precache": false
+  },
+  {
+    "text": "사귀다",
+    "file": "l20-20",
+    "precache": false
+  },
+  {
+    "text": "시원하다",
+    "file": "l20-21",
+    "precache": false
+  },
+  {
+    "text": "안경을 쓰다",
+    "file": "l20-22",
+    "precache": false
+  },
+  {
+    "text": "입다",
+    "file": "l20-23",
+    "precache": false
+  },
+  {
+    "text": "거",
+    "file": "l20-24",
+    "precache": false
+  },
+  {
+    "text": "사이즈",
+    "file": "l20-25",
+    "precache": false
+  },
+  {
+    "text": "운동화",
+    "file": "l20-26",
+    "precache": false
+  },
+  {
+    "text": "이거",
+    "file": "l20-27",
+    "precache": false
+  },
+  {
+    "text": "한번",
+    "file": "l20-28",
+    "precache": false
+  },
+  {
+    "text": "건물",
+    "file": "l20-29",
+    "precache": false
+  },
+  {
+    "text": "곳",
+    "file": "l20-30",
+    "precache": false
+  },
+  {
+    "text": "단어",
+    "file": "l20-31",
+    "precache": false
+  },
+  {
+    "text": "반",
+    "file": "l20-32",
+    "precache": false
+  },
+  {
+    "text": "바지",
+    "file": "l20-33",
+    "precache": false
+  },
+  {
+    "text": "치마",
+    "file": "l20-34",
+    "precache": false
+  },
+  {
+    "text": "티셔츠",
+    "file": "l20-35",
+    "precache": false
+  },
+  {
+    "text": "부츠",
+    "file": "l20-36",
+    "precache": false
+  },
+  {
+    "text": "원피스",
+    "file": "l20-37",
+    "precache": false
+  },
+  {
+    "text": "종류",
+    "file": "l20-38",
+    "precache": false
+  },
+  {
+    "text": "그럼요",
+    "file": "l20-39",
+    "precache": false
+  },
+  {
+    "text": "어떻게 되세요?",
+    "file": "l20-40",
+    "precache": false
+  },
+  {
+    "text": "좀",
+    "file": "l20-41",
+    "precache": false
+  },
+  {
+    "text": "살이 찌다",
+    "file": "l20-42",
+    "precache": false
+  },
+  {
+    "text": "어떤",
+    "file": "l20-43",
+    "precache": false
+  },
+  {
+    "text": "마음에 들다",
+    "file": "l20-44",
+    "precache": false
+  },
+  {
+    "text": "다른",
+    "file": "l20-45",
+    "precache": false
+  },
+  {
+    "text": "이게",
+    "file": "l20-46",
+    "precache": false
+  },
+  {
+    "text": "아름답다",
+    "file": "l21-1",
+    "precache": false
+  },
+  {
+    "text": "가져가다",
+    "file": "l21-2",
+    "precache": false
+  },
+  {
+    "text": "떠들다",
+    "file": "l21-3",
+    "precache": false
+  },
+  {
+    "text": "외우다",
+    "file": "l21-4",
+    "precache": false
+  },
+  {
+    "text": "입학 하다",
+    "file": "l21-5",
+    "precache": false
+  },
+  {
+    "text": "중요하다",
+    "file": "l21-6",
+    "precache": false
+  },
+  {
+    "text": "필요하다",
+    "file": "l21-7",
+    "precache": false
+  },
+  {
+    "text": "유명하다",
+    "file": "l21-8",
+    "precache": false
+  },
+  {
+    "text": "강",
+    "file": "l21-9",
+    "precache": false
+  },
+  {
+    "text": "여러분",
+    "file": "l21-10",
+    "precache": false
+  },
+  {
+    "text": "쓰기",
+    "file": "l21-11",
+    "precache": false
+  },
+  {
+    "text": "읽기",
+    "file": "l21-12",
+    "precache": false
+  },
+  {
+    "text": "경주",
+    "file": "l21-13",
+    "precache": false
+  },
+  {
+    "text": "섬",
+    "file": "l21-14",
+    "precache": false
+  },
+  {
+    "text": "올레길",
+    "file": "l21-15",
+    "precache": false
+  },
+  {
+    "text": "도시",
+    "file": "l21-16",
+    "precache": false
+  },
+  {
+    "text": "에펠탑",
+    "file": "l21-17",
+    "precache": false
+  },
+  {
+    "text": "파리",
+    "file": "l21-18",
+    "precache": false
+  },
+  {
+    "text": "향수",
+    "file": "l21-19",
+    "precache": false
+  },
+  {
+    "text": "비가 오다",
+    "file": "l21-20",
+    "precache": false
+  },
+  {
+    "text": "나중에",
+    "file": "l21-22",
+    "precache": false
+  },
+  {
+    "text": "조용히",
+    "file": "l21-23",
+    "precache": false
+  },
+  {
+    "text": "천천히",
+    "file": "l21-24",
+    "precache": false
+  },
+  {
+    "text": "가장",
+    "file": "l21-25",
+    "precache": false
+  },
+  {
+    "text": "소개 하다",
+    "file": "l22-1",
+    "precache": false
+  },
+  {
+    "text": "구경 하다",
+    "file": "l22-2",
+    "precache": false
+  },
+  {
+    "text": "만들다",
+    "file": "l22-3",
+    "precache": false
+  },
+  {
+    "text": "생각 하다",
+    "file": "l22-4",
+    "precache": false
+  },
+  {
+    "text": "운전 하다",
+    "file": "l22-5",
+    "precache": false
+  },
+  {
+    "text": "목욕 하다",
+    "file": "l22-7",
+    "precache": false
+  },
+  {
+    "text": "스키",
+    "file": "l22-8",
+    "precache": false
+  },
+  {
+    "text": "스키장",
+    "file": "l22-9",
+    "precache": false
+  },
+  {
+    "text": "평일",
+    "file": "l22-10",
+    "precache": false
+  },
+  {
+    "text": "할인",
+    "file": "l22-11",
+    "precache": false
+  },
+  {
+    "text": "공항",
+    "file": "l22-12",
+    "precache": false
+  },
+  {
+    "text": "대사관",
+    "file": "l22-13",
+    "precache": false
+  },
+  {
+    "text": "비자",
+    "file": "l22-14",
+    "precache": false
+  },
+  {
+    "text": "인사동",
+    "file": "l22-15",
+    "precache": false
+  },
+  {
+    "text": "찜질방",
+    "file": "l22-16",
+    "precache": false
+  },
+  {
+    "text": "한복",
+    "file": "l22-17",
+    "precache": false
+  },
+  {
+    "text": "케이팝",
+    "file": "l22-18",
+    "precache": false
+  },
+  {
+    "text": "닭갈비",
+    "file": "l22-19",
+    "precache": false
+  },
+  {
+    "text": "도자기",
+    "file": "l22-20",
+    "precache": false
+  },
+  {
+    "text": "불국사",
+    "file": "l22-21",
+    "precache": false
+  },
+  {
+    "text": "안동",
+    "file": "l22-23",
+    "precache": false
+  },
+  {
+    "text": "이천",
+    "file": "l22-24",
+    "precache": false
+  },
+  {
+    "text": "전주",
+    "file": "l22-25",
+    "precache": false
+  },
+  {
+    "text": "춘천",
+    "file": "l22-26",
+    "precache": false
+  },
+  {
+    "text": "하회탈",
+    "file": "l22-27",
+    "precache": false
+  },
+  {
+    "text": "한라산",
+    "file": "l22-28",
+    "precache": false
+  },
+  {
+    "text": "따뜻하다",
+    "file": "l23-1",
+    "precache": false
+  },
+  {
+    "text": "쌀쌀하다",
+    "file": "l23-2",
+    "precache": false
+  },
+  {
+    "text": "맑다",
+    "file": "l23-3",
+    "precache": false
+  },
+  {
+    "text": "흐리다",
+    "file": "l23-4",
+    "precache": false
+  },
+  {
+    "text": "비슷하다",
+    "file": "l23-5",
+    "precache": false
+  },
+  {
+    "text": "봄",
+    "file": "l23-6",
+    "precache": false
+  },
+  {
+    "text": "여름",
+    "file": "l23-7",
+    "precache": false
+  },
+  {
+    "text": "가을",
+    "file": "l23-8",
+    "precache": false
+  },
+  {
+    "text": "겨울",
+    "file": "l23-9",
+    "precache": false
+  },
+  {
+    "text": "계절",
+    "file": "l23-10",
+    "precache": false
+  },
+  {
+    "text": "눈사람",
+    "file": "l23-11",
+    "precache": false
+  },
+  {
+    "text": "문화",
+    "file": "l23-12",
+    "precache": false
+  },
+  {
+    "text": "하숙집",
+    "file": "l23-13",
+    "precache": false
+  },
+  {
+    "text": "휴가",
+    "file": "l23-14",
+    "precache": false
+  },
+  {
+    "text": "모스크바",
+    "file": "l23-16",
+    "precache": false
+  },
+  {
+    "text": "영상",
+    "file": "l23-17",
+    "precache": false
+  },
+  {
+    "text": "영하",
+    "file": "l23-18",
+    "precache": false
+  },
+  {
+    "text": "바람이 불다",
+    "file": "l23-19",
+    "precache": false
+  },
+  {
+    "text": "눈이 오다",
+    "file": "l23-20",
+    "precache": false
+  },
+  {
+    "text": "꽃이 피다",
+    "file": "l23-21",
+    "precache": false
+  },
+  {
+    "text": "계시다",
+    "file": "l24-3",
+    "precache": false
+  },
+  {
+    "text": "다녀오다",
+    "file": "l24-4",
+    "precache": false
+  },
+  {
+    "text": "도착하다",
+    "file": "l24-5",
+    "precache": false
+  },
+  {
+    "text": "돌아가시다",
+    "file": "l24-6",
+    "precache": false
+  },
+  {
+    "text": "주무시다",
+    "file": "l24-7",
+    "precache": false
+  },
+  {
+    "text": "출발하다",
+    "file": "l24-8",
+    "precache": false
+  },
+  {
+    "text": "무섭다",
+    "file": "l24-9",
+    "precache": false
+  },
+  {
+    "text": "할아버지",
+    "file": "l24-10",
+    "precache": false
+  },
+  {
+    "text": "할머니",
+    "file": "l24-11",
+    "precache": false
+  },
+  {
+    "text": "외할아버지",
+    "file": "l24-12",
+    "precache": false
+  },
+  {
+    "text": "외할머니",
+    "file": "l24-13",
+    "precache": false
+  },
+  {
+    "text": "형",
+    "file": "l24-14",
+    "precache": false
+  },
+  {
+    "text": "누나",
+    "file": "l24-15",
+    "precache": false
+  },
+  {
+    "text": "오빠",
+    "file": "l24-16",
+    "precache": false
+  },
+  {
+    "text": "언니",
+    "file": "l24-17",
+    "precache": false
+  },
+  {
+    "text": "남동생",
+    "file": "l24-18",
+    "precache": false
+  },
+  {
+    "text": "여동생",
+    "file": "l24-19",
+    "precache": false
+  },
+  {
+    "text": "아버지",
+    "file": "l24-20",
+    "precache": false
+  },
+  {
+    "text": "어머니",
+    "file": "l24-21",
+    "precache": false
+  },
+  {
+    "text": "께",
+    "file": "l24-22",
+    "precache": false
+  },
+  {
+    "text": "께서",
+    "file": "l24-23",
+    "precache": false
+  },
+  {
+    "text": "나이",
+    "file": "l24-24",
+    "precache": false
+  },
+  {
+    "text": "년",
+    "file": "l24-25",
+    "precache": false
+  },
+  {
+    "text": "부엌",
+    "file": "l24-26",
+    "precache": false
+  },
+  {
+    "text": "살",
+    "file": "l24-28",
+    "precache": false
+  },
+  {
+    "text": "일주일",
+    "file": "l24-29",
+    "precache": false
+  },
+  {
+    "text": "남편",
+    "file": "l24-30",
+    "precache": false
+  },
+  {
+    "text": "딸",
+    "file": "l24-31",
+    "precache": false
+  },
+  {
+    "text": "아들",
+    "file": "l24-32",
+    "precache": false
+  },
+  {
+    "text": "무슨 일을 하세요?",
+    "file": "l24-33",
+    "precache": false
+  },
+  {
+    "text": "편하다",
+    "file": "l25-1",
+    "precache": false
+  },
+  {
+    "text": "기르다",
+    "file": "l25-2",
+    "precache": false
+  },
+  {
+    "text": "넘다",
+    "file": "l25-3",
+    "precache": false
+  },
+  {
+    "text": "싸우다",
+    "file": "l25-4",
+    "precache": false
+  },
+  {
+    "text": "씹다",
+    "file": "l25-6",
+    "precache": false
+  },
+  {
+    "text": "깎다",
+    "file": "l25-7",
+    "precache": false
+  },
+  {
+    "text": "사용하다",
+    "file": "l25-8",
+    "precache": false
+  },
+  {
+    "text": "강아지",
+    "file": "l25-9",
+    "precache": false
+  },
+  {
+    "text": "껌",
+    "file": "l25-10",
+    "precache": false
+  },
+  {
+    "text": "메시지",
+    "file": "l25-11",
+    "precache": false
+  },
+  {
+    "text": "아주머니",
+    "file": "l25-12",
+    "precache": false
+  },
+  {
+    "text": "잡지",
+    "file": "l25-13",
+    "precache": false
+  },
+  {
+    "text": "휴게실",
+    "file": "l25-14",
+    "precache": false
+  },
+  {
+    "text": "냄새가 나다",
+    "file": "l25-15",
+    "precache": false
+  },
+  {
+    "text": "거짓말 하다",
+    "file": "l26-2",
+    "precache": false
+  },
+  {
+    "text": "발표 하다",
+    "file": "l26-3",
+    "precache": false
+  },
+  {
+    "text": "안다",
+    "file": "l26-4",
+    "precache": false
+  },
+  {
+    "text": "열다",
+    "file": "l26-5",
+    "precache": false
+  },
+  {
+    "text": "울다",
+    "file": "l26-6",
+    "precache": false
+  },
+  {
+    "text": "지각 하다",
+    "file": "l26-7",
+    "precache": false
+  },
+  {
+    "text": "힘들다",
+    "file": "l26-8",
+    "precache": false
+  },
+  {
+    "text": "말씀 하다",
+    "file": "l26-9",
+    "precache": false
+  },
+  {
+    "text": "죄송하다",
+    "file": "l26-10",
+    "precache": false
+  },
+  {
+    "text": "주문 하다",
+    "file": "l26-11",
+    "precache": false
+  },
+  {
+    "text": "질문 하다",
+    "file": "l26-12",
+    "precache": false
+  },
+  {
+    "text": "부탁 하다",
+    "file": "l26-13",
+    "precache": false
+  },
+  {
+    "text": "답",
+    "file": "l26-15",
+    "precache": false
+  },
+  {
+    "text": "자장면",
+    "file": "l26-16",
+    "precache": false
+  },
+  {
+    "text": "주소",
+    "file": "l26-17",
+    "precache": false
+  },
+  {
+    "text": "직원",
+    "file": "l26-18",
+    "precache": false
+  },
+  {
+    "text": "바꿔 주세요",
+    "file": "l26-19",
+    "precache": false
+  },
+  {
+    "text": "안녕히 계세요",
+    "file": "l26-20",
+    "precache": false
+  },
+  {
+    "text": "여보세요",
+    "file": "l26-21",
+    "precache": false
+  },
+  {
+    "text": "전화를 받다",
+    "file": "l26-22",
+    "precache": false
+  },
+  {
+    "text": "전화를 걸다",
+    "file": "l26-23",
+    "precache": false
+  },
+  {
+    "text": "전화를 끊다",
+    "file": "l26-24",
+    "precache": false
+  },
+  {
+    "text": "전화가 오다",
+    "file": "l26-25",
+    "precache": false
+  },
+  {
+    "text": "아니에요",
+    "file": "l27-1",
+    "precache": false
+  },
+  {
+    "text": "얘기 하다",
+    "file": "l27-2",
+    "precache": false
+  },
+  {
+    "text": "음료수",
+    "file": "l27-3",
+    "precache": false
+  },
+  {
+    "text": "준비 하다",
+    "file": "l27-4",
+    "precache": false
+  },
+  {
+    "text": "초대 하다",
+    "file": "l27-5",
+    "precache": false
+  },
+  {
+    "text": "공연",
+    "file": "l27-6",
+    "precache": false
+  },
+  {
+    "text": "무료",
+    "file": "l27-7",
+    "precache": false
+  },
+  {
+    "text": "외국인",
+    "file": "l27-8",
+    "precache": false
+  },
+  {
+    "text": "이걸",
+    "file": "l27-9",
+    "precache": false
+  },
+  {
+    "text": "축하 하다",
+    "file": "l27-10",
+    "precache": false
+  },
+  {
+    "text": "서른",
+    "file": "l27-11",
+    "precache": false
+  },
+  {
+    "text": "여행사",
+    "file": "l27-12",
+    "precache": false
+  },
+  {
+    "text": "저쪽",
+    "file": "l27-13",
+    "precache": false
+  },
+  {
+    "text": "케이크",
+    "file": "l27-14",
+    "precache": false
+  },
+  {
+    "text": "휴일",
+    "file": "l27-15",
+    "precache": false
+  },
+  {
+    "text": "경기장",
+    "file": "l27-16",
+    "precache": false
+  },
+  {
+    "text": "미술관",
+    "file": "l27-17",
+    "precache": false
+  },
+  {
+    "text": "불꽃",
+    "file": "l27-18",
+    "precache": false
+  },
+  {
+    "text": "야구장",
+    "file": "l27-19",
+    "precache": false
+  },
+  {
+    "text": "일시",
+    "file": "l27-20",
+    "precache": false
+  },
+  {
+    "text": "입장료",
+    "file": "l27-21",
+    "precache": false
+  },
+  {
+    "text": "전시회",
+    "file": "l27-22",
+    "precache": false
+  },
+  {
+    "text": "축제",
+    "file": "l27-23",
+    "precache": false
+  },
+  {
+    "text": "콘서트",
+    "file": "l27-24",
+    "precache": false
+  },
+  {
+    "text": "내다",
+    "file": "l28-1",
+    "precache": false
+  },
+  {
+    "text": "신청 하다",
+    "file": "l28-2",
+    "precache": false
+  },
+  {
+    "text": "헬스 하다",
+    "file": "l28-3",
+    "precache": false
+  },
+  {
+    "text": "졸업 하다",
+    "file": "l28-4",
+    "precache": false
+  },
+  {
+    "text": "놓다",
+    "file": "l28-5",
+    "precache": false
+  },
+  {
+    "text": "조깅 하다",
+    "file": "l28-6",
+    "precache": false
+  },
+  {
+    "text": "신청서",
+    "file": "l28-7",
+    "precache": false
+  },
+  {
+    "text": "연락처",
+    "file": "l28-8",
+    "precache": false
+  },
+  {
+    "text": "회비",
+    "file": "l28-9",
+    "precache": false
+  },
+  {
+    "text": "회원카드",
+    "file": "l28-10",
+    "precache": false
+  },
+  {
+    "text": "준비운동",
+    "file": "l28-11",
+    "precache": false
+  },
+  {
+    "text": "샌드위치",
+    "file": "l28-12",
+    "precache": false
+  },
+  {
+    "text": "기간",
+    "file": "l28-13",
+    "precache": false
+  },
+  {
+    "text": "뉴질랜드",
+    "file": "l28-14",
+    "precache": false
+  },
+  {
+    "text": "싱가포르",
+    "file": "l28-15",
+    "precache": false
+  },
+  {
+    "text": "아프리카",
+    "file": "l28-16",
+    "precache": false
+  },
+  {
+    "text": "인도",
+    "file": "l28-17",
+    "precache": false
+  },
+  {
+    "text": "지역",
+    "file": "l28-18",
+    "precache": false
+  },
+  {
+    "text": "캐나다",
+    "file": "l28-19",
+    "precache": false
+  },
+  {
+    "text": "태국",
+    "file": "l28-20",
+    "precache": false
+  },
+  {
+    "text": "아마",
+    "file": "l28-21",
+    "precache": false
+  },
+  {
+    "text": "항상",
+    "file": "l28-22",
+    "precache": false
+  },
+  {
+    "text": "고르다",
+    "file": "l29-1",
+    "precache": false
+  },
+  {
+    "text": "선물 하다",
+    "file": "l29-2",
+    "precache": false
+  },
+  {
+    "text": "다르다",
+    "file": "l29-3",
+    "precache": false
+  },
+  {
+    "text": "인터넷 하다",
+    "file": "l29-4",
+    "precache": false
+  },
+  {
+    "text": "자르다",
+    "file": "l29-5",
+    "precache": false
+  },
+  {
+    "text": "팔다",
+    "file": "l29-6",
+    "precache": false
+  },
+  {
+    "text": "청계천",
+    "file": "l29-8",
+    "precache": false
+  },
+  {
+    "text": "동대문시장",
+    "file": "l29-9",
+    "precache": false
+  },
+  {
+    "text": "전통",
+    "file": "l29-10",
+    "precache": false
+  },
+  {
+    "text": "낮",
+    "file": "l29-11",
+    "precache": false
+  },
+  {
+    "text": "말씀",
+    "file": "l29-12",
+    "precache": false
+  },
+  {
+    "text": "세상",
+    "file": "l29-13",
+    "precache": false
+  },
+  {
+    "text": "팝콘",
+    "file": "l29-14",
+    "precache": false
+  },
+  {
+    "text": "경치",
+    "file": "l29-15",
+    "precache": false
+  },
+  {
+    "text": "남산",
+    "file": "l29-16",
+    "precache": false
+  },
+  {
+    "text": "야경",
+    "file": "l29-17",
+    "precache": false
+  },
+  {
+    "text": "으로",
+    "file": "l29-18",
+    "precache": false
+  },
+  {
+    "text": "충무로역",
+    "file": "l29-19",
+    "precache": false
+  },
+  {
+    "text": "물고기",
+    "file": "l29-20",
+    "precache": false
+  },
+  {
+    "text": "여러",
+    "file": "l29-21",
+    "precache": false
+  },
+  {
+    "text": "옛날",
+    "file": "l29-22",
+    "precache": false
+  },
+  {
+    "text": "왕",
+    "file": "l29-23",
+    "precache": false
+  },
+  {
+    "text": "노래를 부르다",
+    "file": "l29-24",
+    "precache": false
+  },
+  {
+    "text": "마다",
+    "file": "l29-25",
+    "precache": false
+  },
+  {
+    "text": "배가 부르다",
+    "file": "l29-26",
+    "precache": false
+  },
+  {
+    "text": "이름을 부르다",
+    "file": "l29-27",
+    "precache": false
+  },
+  {
+    "text": "정말",
+    "file": "l29-28",
+    "precache": false
+  },
+  {
+    "text": "도와주다",
+    "file": "l30-1",
+    "precache": false
+  },
+  {
+    "text": "걱정 하다",
+    "file": "l30-2",
+    "precache": false
+  },
+  {
+    "text": "조용하다",
+    "file": "l30-3",
+    "precache": false
+  },
+  {
+    "text": "지내다",
+    "file": "l30-4",
+    "precache": false
+  },
+  {
+    "text": "예약 하다",
+    "file": "l30-5",
+    "precache": false
+  },
+  {
+    "text": "확인 하다",
+    "file": "l30-6",
+    "precache": false
+  },
+  {
+    "text": "즐겁다",
+    "file": "l30-7",
+    "precache": false
+  },
+  {
+    "text": "학기",
+    "file": "l30-8",
+    "precache": false
+  },
+  {
+    "text": "개월",
+    "file": "l30-9",
+    "precache": false
+  },
+  {
+    "text": "뉴스",
+    "file": "l30-10",
+    "precache": false
+  },
+  {
+    "text": "생활",
+    "file": "l30-11",
+    "precache": false
+  },
+  {
+    "text": "얼마",
+    "file": "l30-12",
+    "precache": false
+  },
+  {
+    "text": "준비",
+    "file": "l30-14",
+    "precache": false
+  },
+  {
+    "text": "퇴근",
+    "file": "l30-15",
+    "precache": false
+  },
+  {
+    "text": "하루",
+    "file": "l30-16",
+    "precache": false
+  },
+  {
+    "text": "골뱅이",
+    "file": "l30-17",
+    "precache": false
+  },
+  {
+    "text": "그때",
+    "file": "l30-18",
+    "precache": false
+  },
+  {
+    "text": "연락",
+    "file": "l30-19",
+    "precache": false
+  },
+  {
+    "text": "점",
+    "file": "l30-20",
+    "precache": false
+  },
+  {
+    "text": "파이팅",
+    "file": "l30-21",
+    "precache": false
+  }
+]

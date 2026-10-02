@@ -36,3 +36,19 @@ test('unsupported, system errors and thrown playback failures produce actionable
   const f=setup();f.player.play('하나');f.synth.utterance.onerror({error:'language-unavailable'});assert.equal(f.player.diagnostics().error,'language-unavailable');assert.equal(f.timers.size,0);
   f.synth.speak=()=>{throw new Error('blocked');};assert.equal(f.player.play('하나'),false);assert.equal(f.player.diagnostics().error,'exception');assert.equal(f.timers.size,0);
 });
+
+test('packaged audio works without system voices and supports slow playback',async()=>{
+  let media;
+  class Audio{constructor(path){this.path=path;media=this;}play(){return Promise.resolve();}pause(){}removeAttribute(){}}
+  const f=setup({synth:undefined,Utterance:undefined,Audio,resolveAudio:()=> './audio/a.m4a'});
+  assert.equal(f.player.supported,true);f.player.play('아',true);assert.equal(media.path,'./audio/a.m4a');assert.equal(media.playbackRate,.75);
+  media.onplaying();assert.equal(f.player.diagnostics().status,'playing');media.onended();assert.equal(f.player.diagnostics().status,'ended');
+});
+test('audio failure offers a user-triggered system retry; stale playback cannot change a new question',async()=>{
+  let media;
+  class Audio{constructor(){media=this;}play(){return Promise.reject(new Error('offline'));}pause(){}removeAttribute(){}}
+  const f=setup({Audio,resolveAudio:()=> './audio/a.m4a'});f.player.play('아');await Promise.resolve();await Promise.resolve();
+  assert.equal(f.player.diagnostics().error,'audio-unavailable');assert.equal(f.calls.includes('speak'),false);
+  f.player.retrySystem();assert.equal(f.synth.utterance.text,'아');assert.equal(f.player.diagnostics().source,'system');
+  const old=media;f.player.stop();old.onended();assert.equal(f.player.diagnostics().status,'idle');
+});
